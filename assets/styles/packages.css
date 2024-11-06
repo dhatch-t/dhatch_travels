@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Quicksand';
+}
+
+.package-section {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.package-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+    background-color: #fdfdfd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.5s ease;
+    border: 1px solid #ddd;
+    position: relative;
+    background: rgba(255, 255, 255, 0.75);
+    /* Glassmorphism effect */
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    backdrop-filter: blur(10px);
+    margin: 10px;
+    cursor: pointer;
+    /* Glassmorphism effect */
+    max-width: 100%; /* Prevents the card from exceeding the container */
+}
+
+.package-card:hover {
+    background-color: #f8f8f8;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
+}
+
+
+.image-and-info{
+    max-width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 15px;
+    align-items: center;
+}
+
+.package-image-container {
+    max-width: 60%;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+    display: flex;
+    min-height: 250px;
+}
+
+.package-image-container img {
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.package-info {
+    flex: 1;
+    max-width: 70%;
+    margin-left: 1px;
+    max-width: calc(100%-240px);
+}
+
+.package-info:hover{
+    .package-title{
+        color: blue;
+    }
+}
+
+.package-title {
+    font-size: 1.6em;
+    color: #333;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.package-duration {
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.package-features {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.feature {
+    background-color: #eee;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.9em;
+}
+
+.feature.disabled {
+    opacity: 0.5;
+}
+
+.hotel-details {
+    display: flex;
+    display: none;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.hotel-stars {
+    color: gold;
+}
+
+.package-price {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.enquiry-btn {
+    /* background-color: #ED3237;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px; */
+    text-decoration: none;
+    background: linear-gradient(135deg, #FF512F 0%, #DD2476 100%);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.enquiry-btn:hover {
+    /* background-color: #c5222b; */
+    background: linear-gradient(135deg, #DD2476 0%, #FF512F 100%);
+}
+
+.viewmore-btn {
+    margin: auto;
+    margin-top: 20px;
+    cursor: pointer;
+    color: blue;
+    font-weight: bold;
+}
+
+
+.viewmore-btn:hover {
+    color: #dd2476;
+}
+
+.more-details-card {
+    display: none;
+    background-color: #f1f1f1;
+    padding: 20px;
+    margin: 50px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    animation: expandDetails 0.5s ease;
+    border-top: 2px solid #f77a7e;
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center the entire content */
+
+}
+
+
+.more-details-card li {
+    margin-bottom: 10px;
+    font-size: 1em;
+    color: #555;
+    /* font-style: italic; */
+}
+
+.more-details-card strong {
+    margin-bottom: 10px;
+    font-size: 1.02em;
+    font-weight: bold;
+    color: #555;
+    /* font-style: italic; */
+}
+
+
+.arrow {
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+}
+
+.arrow.rotate {
+    transform: rotate(90deg);
+}
+
+@keyframes expandDetails {
+    from {
+        opacity: 0;
+        max-height: 0;
+    }
+
+    to {
+        opacity: 1;
+        max-height: 500px;
+    }
+}
+
+@media (max-width: 900px) {
+    .package-section{
+        padding: 15px;
+
+    }
+        .package-card {
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 15px;
+            text-align: left;
+            margin: 0;
+        }
+
+        .image-and-info{
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 15px;
+            max-width: 100%;
+        }
+
+        .package-image-container {
+            max-width: 100%;
+            width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        .package-image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+        }
+
+        .package-info {
+            max-width: 100%;
+            margin-left: 0;
+            margin-bottom: 15px;
+        }
+
+        .package-title {
+            font-size: 1.4em;
+            margin-bottom: 8px;
+        }
+
+        .package-duration {
+            font-size: 1em;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .package-features {
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 15px;
+            display: none;
+        }
+
+        .package-price {
+            width: 100%;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 15px;
+        }
+
+        .enquiry-btn {
+            padding: 15px;
+            font-size: 0.9em;
+            margin-left: 1%;
+            width: 25%;
+            align-items: center;
+            text-align: center;
+            font-size: 15px;
+        }
+
+        .viewmore-btn {
+            margin: 0;
+            padding: 10px;
+            font-size: 15px;
+            text-align: center;
+        }
+        .more-details-card{
+            margin: 10px auto;
+        }
+    }

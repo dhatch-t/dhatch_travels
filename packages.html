@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Packages</title>
+
+    <link rel="stylesheet" href="/assets/styles/packages.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/styles/head_foot.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="nav container">
+           <div class="nav__data">
+              <a href=".\" class="nav__logo">
+               <img src="/assets/files/logo.png" alt="Dhatch Logo">
+           </a>
+              
+              <div class="nav__toggle" id="nav-toggle">
+                 <i class="ri-menu-line nav__burger"></i>
+                 <i class="ri-close-line nav__close"></i>
+              </div>
+           </div>
+
+           <!-- NAV MENU -->
+           <div class="nav__menu" id="nav-menu">
+              <ul class="nav__list">
+                 <li><a href=".\" class="nav__link">Home</a></li>
+
+
+                 <!--=============== DROPDOWN 1 ===============-->
+                 <li class="dropdown__item">
+                    <div class="nav__link">
+                       Services<i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                    </div>
+
+                    <ul class="dropdown__menu">
+                       <li>
+                           <a href="/services.html#holiday-package" class="dropdown__link"> Holiday Package</a>                          
+                        </li><li>
+                           <a href="/services.html#air-ticket-booking" class="dropdown__link"> Air Ticket Booking</a>                          
+                        </li><li>
+                           <a href="/services.html#hotel-booking" class="dropdown__link"> Hotel Booking</a>                          
+                        </li><li>
+                           <a href="/services.html#visa" class="dropdown__link"> Visa Services</a>                          
+                        </li><li>
+                           <a href="/services.html#travel-insurance" class="dropdown__link"> Cab Services</a>                          
+                        </li><li>
+                           <a href="/services.html#cab-services" class="dropdown__link"> Travel Insurance</a>                          
+                        </li>
+
+                    </ul>
+                 </li>
+                 
+
+                 <li class="dropdown__item">
+                   <div class="nav__link">
+                      Packages <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                   </div>
+
+                   <ul class="dropdown__menu">
+                      <li>
+                         <a href="/packages.html#north-india" class="dropdown__link">North India</a>                          
+                      </li>
+                      <li>
+                          <a href="/packages.html#south-east-asia" class="dropdown__link">South East Asia</a>                          
+                       </li>
+                       <li><a href="/packages.html#singapore" class="dropdown__link">Singapore</a></li>
+                       <li><a href="/packages.html#malaysia" class="dropdown__link">Malaysia</a></li>
+
+                       <li>
+                          <a href="/packages.html#middle-east" class="dropdown__link">Middle East</a>                          
+                       </li>
+                       <li><a href="/packages.html#central-asia" class="dropdown__link">Central Asia</a></li>
+                       <li><a href="/packages.html#/europe" class="dropdown__link">Europe</a></li>
+                       <li><a href="/packages.html" class="dropdown__link">View All</a></li>
+                       </ul>
+                </li>
+
+                <li><a href="blogs.html" class="nav__link">Blog</a></li>
+                <li><a href="contact.html" class="nav__link">Contact</a></li>
+               </ul>
+           </div>
+        </nav>
+     </header>
+
+
+    <section class="package-section">
+
+        <!--  Singapore Standard Package -->
+        <div class="package-card">
+            <div class="image-and-info">
+                <div class="package-image-container" data-url="singapore-std-package.html"
+                    onclick="navigateToPackage(this)">
+                    <img src="/assets/files/cards/singapore-card.png"
+                        alt="Singapore" class="package-image">
+                </div>
+                <div class="package-info" data-url="singapore-std-package.html" onclick="navigateToPackage(this)">
+                    <h3 class="package-title">Singapore Standard Package</h3>
+                    <p class="package-duration">5 Days 4 Nights</p>
+                    <div class="package-features">
+                        <span class="feature"><i class="fas fa-bed"></i> Hotels</span>
+                        <span class="feature disabled"><i class="fas fa-plane"></i> Flights</span>
+                        <span class="feature"><i class="fas fa-utensils"></i> Meals</span>
+                        <span class="feature"><i class="fas fa-shuttle-van"></i> Transfers</span>
+                        <span class="feature"><i class="fas fa-binoculars"></i> Sightseeing</span>
+                    </div>
+                    <div class="hotel-details">
+                        <span><i class="fas fa-hotel"></i> </span>
+                        <span class="hotel-stars">★ ★ ★ ★ ☆</span>
+                    </div>
+                </div>
+            </div>
+            <div class="package-price">
+                <!-- <a href="#" class="enquiry-btn">View Details</a> -->
+                <a href="packages/singapore-std-package.html" class="enquiry-btn">Book Now</a>
+                <div class="viewmore-btn" onclick="toggleDetails(this)">
+                    Highlights <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+        </div>
+        <div class="more-details-card">
+            <ul>
+                <li>Comfortable stay with daily breakfast for 4 nights at the hotel.</li>
+                <li>Exciting Night Safari tour with convenient seat-in-coach transportation.</li>
+                <li>Visit iconic attractions like Gardens By The Bay and Sands Sky Park.</li>
+                <li>Enjoy a fun-filled day at Sentosa with rides and shows.</li>
+                <li>Hassle-free travel with all tours and transfers included.</li>
+            </ul>
+        </div>
+
+        <!-- Langkawi and Kuala Lumpur -->
+        <div class="package-card">
+            <div class="image-and-info">
+                <div class="package-image-container" data-url="langkawi-kualalumpur-package.html"
+                    onclick="navigateToPackage(this)">
+                    <img src="/assets/files/cards/malaysia-card.png" alt="Singapore" class="package-image">
+                </div>
+                <div class="package-info" data-url="langkawi-kualalumpur-package.html"
+                    onclick="navigateToPackage(this)">
+                    <h3 class="package-title">Langkawi and Kuala Lumpur</h3>
+                    <p class="package-duration">6 Days 5 Nights</p>
+                    <div class="package-features">
+                        <span class="feature"><i class="fas fa-bed"></i> Hotels</span>
+                        <span class="feature disabled"><i class="fas fa-plane"></i> Flights</span>
+                        <span class="feature"><i class="fas fa-utensils"></i> Meals</span>
+                        <span class="feature"><i class="fas fa-shuttle-van"></i> Transfers</span>
+                        <span class="feature"><i class="fas fa-binoculars"></i> Sightseeing</span>
+                    </div>
+                    <div class="hotel-details">
+                        <span><i class="fas fa-hotel"></i> </span>
+                        <span class="hotel-stars">★ ★ ★ ★ ☆</span>
+                    </div>
+                </div>
+            </div>
+            <div class="package-price">
+                <!-- <a href="#" class="enquiry-btn">View Details</a> -->
+                <a href="/packages/langkawi-kualalumpur-package.html" class="enquiry-btn">Book Now</a>
+                <div class="viewmore-btn" onclick="toggleDetails(this)">
+                    Highlights <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+        </div>
+        <div class="more-details-card">
+            <ul>
+                <li>Explore diverse destinations with island-hopping in Langkawi and city sights in Kuala Lumpur.</li>
+                <li>Enjoy private airport, intercity, and tour transfers for a seamless journey.</li>
+                <li>Thrilling Genting Highlands day trip with a scenic cable car ride.</li>
+                <li>Discover cultural gems like Batu Caves and Malaysia’s rich heritage.</li>
+                <li>Flexible island activities in Langkawi with water sports and adventures.</li>
+            </ul>
+        </div>
+
+
+        <!-- Exotic Bali -->
+        <div class="package-card">
+            <div class="image-and-info">
+                <div class="package-image-container" data-url="exotic-bali.html" onclick="navigateToPackage(this)">
+                    <img src="/assets/files/cards/bali-card.png" alt="Singapore" class="package-image">
+                </div>
+                <div class="package-info" data-url="exotic-bali.html" onclick="navigateToPackage(this)">
+                    <h3 class="package-title">Exotic Bali</h3>
+                    <p class="package-duration">5 Days 4 Nights</p>
+                    <div class="package-features">
+                        <span class="feature"><i class="fas fa-bed"></i> Hotels</span>
+                        <span class="feature disabled"><i class="fas fa-plane"></i> Flights</span>
+                        <span class="feature"><i class="fas fa-utensils"></i> Meals</span>
+                        <span class="feature"><i class="fas fa-shuttle-van"></i> Transfers</span>
+                        <span class="feature"><i class="fas fa-binoculars"></i> Sightseeing</span>
+                    </div>
+                    <div class="hotel-details">
+                        <span><i class="fas fa-hotel"></i> </span>
+                        <span class="hotel-stars">★ ★ ★ ★ ☆</span>
+                    </div>
+                </div>
+            </div>
+            <div class="package-price">
+                <!-- <a href="#" class="enquiry-btn">View Details</a> -->
+                <a href="/packages/exotic-bali.html" class="enquiry-btn">Book Now</a>
+                <div class="viewmore-btn" onclick="toggleDetails(this)">
+                    Highlights <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+        </div>
+        <div class="more-details-card">
+            <ul>
+                <li>Stay 4 nights in comfort with daily breakfast included.</li>
+                <li>Be welcomed with a traditional flower garland upon arrival in Bali.</li>
+                <li>Thrill-seek with Jet Skiing, parasailing, and banana boat rides at Uluwatu.</li>
+                <li>Discover Nusa Penida Island’s breathtaking views, including a snack lunch.</li>
+                <li>Tour iconic sites such as Ulun Danu Temple, Handara Gate, and Tanah Lot.</li>
+            </ul>
+        </div>
+
+
+        <!-- Port Blair, Havelock, and Neil Island  -->
+        <div class="package-card">
+            <div class="image-and-info">
+                <div class="package-image-container" data-url="andaman-package.html" onclick="navigateToPackage(this)">
+                    <img src="/assets/files/cards/andaman-card.png" alt="Singapore" class="package-image">
+                </div>
+                <div class="package-info" data-url="andaman-package.html" onclick="navigateToPackage(this)">
+                    <h3 class="package-title">Port Blair, Havelock, and Neil Island</h3>
+                    <p class="package-duration"> 6 Days 5 Nights</p>
+                    <div class="package-features">
+                        <span class="feature"><i class="fas fa-bed"></i> Hotels</span>
+                        <span class="feature disabled"><i class="fas fa-plane"></i> Flights</span>
+                        <span class="feature"><i class="fas fa-utensils"></i> Meals</span>
+                        <span class="feature"><i class="fas fa-shuttle-van"></i> Transfers</span>
+                        <span class="feature"><i class="fas fa-binoculars"></i> Sightseeing</span>
+                    </div>
+                    <div class="hotel-details">
+                        <span><i class="fas fa-hotel"></i> </span>
+                        <span class="hotel-stars">★ ★ ★ ★ ☆</span>
+                    </div>
+                </div>
+            </div>
+            <div class="package-price">
+                <!-- <a href="#" class="enquiry-btn">View Details</a> -->
+                <a href="/packages/andaman-package.html" class="enquiry-btn">Book Now</a>
+                <div class="viewmore-btn" onclick="toggleDetails(this)">
+                    Highlights <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+        </div>
+        <div class="more-details-card">
+            <ul>
+                <li>Explore historic Cellular Jail with a captivating Light and Sound Show.</li>
+                <li>Relax on Radhanagar Beach, acclaimed as one of Asia’s finest.</li>
+                <li>Enjoy thrilling water sports at Elephant Beach.</li>
+                <li>Discover the tranquil beauty of Laxmanpur Beach on Neil Island.</li>
+                <li>Seamless private ferry transfers between islands for convenience.</li>
+            </ul>
+        </div>
+
+        <!-- abudhabi package -->
+        <div class="package-card">
+            <div class="image-and-info">
+                <div class="package-image-container" data-url="abudhabi-package.html" onclick="navigateToPackage(this)">
+                    <img src="/assets/files/cards/uae-card.jpg" alt="Singapore" class="package-image">
+                </div>
+                <div class="package-info" data-url="abudhabi-package.html" onclick="navigateToPackage(this)">
+                    <h3 class="package-title">Burj Khalifa & Abu Dhabi</h3>
+                    <p class="package-duration">6 Days 5 Nights</p>
+                    <div class="package-features">
+                        <span class="feature"><i class="fas fa-bed"></i> Hotels</span>
+                        <span class="feature disabled"><i class="fas fa-plane"></i> Flights</span>
+                        <span class="feature"><i class="fas fa-utensils"></i> Meals</span>
+                        <span class="feature"><i class="fas fa-shuttle-van"></i> Transfers</span>
+                        <span class="feature"><i class="fas fa-binoculars"></i> Sightseeing</span>
+                    </div>
+                    <div class="hotel-details">
+                        <span><i class="fas fa-hotel"></i> </span>
+                        <span class="hotel-stars">★ ★ ★ ★ ☆</span>
+                    </div>
+                </div>
+            </div>
+            <div class="package-price">
+                <!-- <a href="#" class="enquiry-btn">View Details</a> -->
+                <a href="packages/abudhabi-package.html" class="enquiry-btn">Book Now</a>
+                <div class="viewmore-btn" onclick="toggleDetails(this)">
+                    Highlights <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+        </div>
+        <div class="more-details-card">
+            <ul>
+                <li>5-night stay at a 4-star hotel with daily breakfast included.</li>
+                <li>Tour Burj Khalifa, Burj Al Arab, and The Palm for breathtaking views.</li>
+                <li>Enjoy a Dhow Cruise with dinner and dazzling views of Dubai’s skyline.</li>
+                <li>Experience a desert safari with dune bashing, camel rides, and a BBQ dinner.</li>
+                <li>Visit Sheikh Zayed Mosque and Emirates Palace on a scenic Abu Dhabi tour.</li>
+                <li>Enjoy a thrilling Ferrari experience at Abu Dhabi’s iconic theme park.</li>
+
+            </ul>
+        </div>
+
+        <!-- Enchanting maldives -->
+        <div class="package-card">
+            <div class="image-and-info">
+                <div class="package-image-container" data-url="enchanting-maldives.html"
+                    onclick="navigateToPackage(this)">
+                    <img src="/assets/files/cards/maldives-card.jpg" alt="Singapore" class="package-image">
+                </div>
+                <div class="package-info" data-url="enchanting-maldives.html" onclick="navigateToPackage(this)">
+                    <h3 class="package-title">Enchanting Maldives</h3>
+                    <p class="package-duration"> 4 Days 3 Nights</p>
+                    <div class="package-features">
+                        <span class="feature"><i class="fas fa-bed"></i> Hotels</span>
+                        <span class="feature disabled"><i class="fas fa-plane"></i> Flights</span>
+                        <span class="feature"><i class="fas fa-utensils"></i> Meals</span>
+                        <span class="feature"><i class="fas fa-shuttle-van"></i> Transfers</span>
+                        <span class="feature"><i class="fas fa-binoculars"></i> Sightseeing</span>
+                    </div>
+                    <div class="hotel-details">
+                        <span><i class="fas fa-hotel"></i> </span>
+                        <span class="hotel-stars">★ ★ ★ ★ ☆</span>
+                    </div>
+                </div>
+            </div>
+            <div class="package-price">
+                <!-- <a href="#" class="enquiry-btn">View Details</a> -->
+                <a href="#" class="enquiry-btn">Book Now</a>
+                <div class="viewmore-btn" onclick="toggleDetails(this)">
+                    Highlights <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+        </div>
+        <div class="more-details-card">
+            <ul>
+                <li>Comfortable 3-night stay at the specified hotel, ensuring a relaxing experience.</li>
+                <li>Complimentary speedboat transfers from the airport to the resort at scheduled times.</li>
+                <li>Full board stay, including breakfast, lunch, and dinner throughout the visit.</li>
+                <li>Accommodation in a Superior Beach Front Room, providing stunning ocean views and easy beach access.
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="package-card">
+            <div class="image-and-info">
+                <div class="package-image-container" data-url="singapore-std-package.html"
+                    onclick="navigateToPackage(this)">
+                    <img src="https://placehold.co/800x500/eee/000" alt="Singapore" class="package-image">
+                </div>
+                <div class="package-info" data-url="singapore-std-package.html" onclick="navigateToPackage(this)">
+                    <h3 class="package-title">Package title</h3>
+                    <p class="package-duration"> Days Nights</p>
+                    <div class="package-features">
+                        <span class="feature"><i class="fas fa-bed"></i> Hotels</span>
+                        <span class="feature disabled"><i class="fas fa-plane"></i> Flights</span>
+                        <span class="feature"><i class="fas fa-utensils"></i> Meals</span>
+                        <span class="feature"><i class="fas fa-shuttle-van"></i> Transfers</span>
+                        <span class="feature"><i class="fas fa-binoculars"></i> Sightseeing</span>
+                    </div>
+                    <div class="hotel-details">
+                        <span><i class="fas fa-hotel"></i> </span>
+                        <span class="hotel-stars">★ ★ ★ ★ ☆</span>
+                    </div>
+                </div>
+            </div>
+            <div class="package-price">
+                <!-- <a href="#" class="enquiry-btn">View Details</a> -->
+                <a href="#" class="enquiry-btn">Book Now</a>
+                <div class="viewmore-btn" onclick="toggleDetails(this)">
+                    Highlights <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+        </div>
+        <div class="more-details-card">
+            <ul>
+            </ul>
+        </div>
+
+
+
+    </section>
+
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/8925923750" class="whatsapp-button" target="_blank">
+        <img src="https://png.pngtree.com/png-vector/20221018/ourmid/pngtree-whatsapp-mobile-software-icon-png-image_6315991.png" alt="WhatsApp" />
+    </a>
+    
+    <footer class="footer">
+        <div class="footer-container">
+          <!-- Company Information -->
+          <div class="footer-section company-info">
+            <img src="/assets/files/logo2.png" alt="">
+            <p>First Floor, Vaigarai block, St, Paul's complex,</p>
+            <p>99/1, near Head post office signal,Sangillyandapuram, </p>
+            <p> Tiruchirappalli, Tamil Nadu 620001</p>
+            <p>Email:
+            <a href="mailto:dhatchtnt@gmail.com" style="color: blue;"> dhatchtnt@gmail.com</a><br>
+        </p>
+            <p>Phone:
+            <a href="tel:+918925923750" style="color: blue;">+91 89259 23750</a><br>
+            <a href="tel:+918925923751" style="color: blue;"> +91 89259 23751</a><br>
+            <a href="tel:+917373773443" style="color: blue;"> +91 73737 73443</a>
+            </p>
+          </div>
+      
+          <!-- Quick Links -->
+          <div class="footer-section quick-links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="/about.html">About Us</a></li>
+              <li><a href="/services.html">Services</a></li>
+              <li><a href="/packages.html">Holiday Packages</a></li>
+              <li><a href="/contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+      
+          <!-- Social Media Links -->
+          <div class="footer-section social-media">
+            <h3>Follow Us</h3>
+            <a href="https://www.facebook.com/people/Dhatch-Tours-Travels/61566988809950/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/800px-2021_Facebook_icon.svg.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/dhatch_travels" target="_blank"><img src="https://img.icons8.com/fluency/48/instagram-new.png" alt="Instagram"></a>
+            <a href="https://www.threads.net/@dhatch_travels" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Threads_%28app%29_logo.svg/2048px-Threads_%28app%29_logo.svg.png" alt="Threads"></a>
+            <a href="https://wa.me/8925923750" target="_blank"><img src="https://png.pngtree.com/png-vector/20221018/ourmid/pngtree-whatsapp-mobile-software-icon-png-image_6315991.png" alt="WhatsApp"></a>
+          </div>
+      
+          <!-- Newsletter Subscription -->
+          <div class="footer-section newsletter">
+            <h3>Newsletter</h3>
+            <form action="#">
+              <input type="email" placeholder="Your email address" required>
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      
+        <!-- Copyright -->
+        <div class="footer-bottom">
+          <p>&copy; 2024 Dhatch Tours & Travels | Designed by <a href="https://arknishinvent.com/" target="_blank">ArkNish Invent</a></p>
+        </div>
+      </footer>
+    
+    <script src="/assets/scripts/head_foot.js"></script>
+
+
+
+    <script>
+
+
+
+        window.addEventListener('load', () => {
+            document.querySelectorAll('.more-details-card').forEach(card => {
+                card.style.display = 'none';
+            });
+        });
+
+
+        function toggleDetails(button) {
+            const details = button.closest('.package-card').nextElementSibling;
+            const arrow = button.querySelector('.arrow');
+            if (details.style.display === "none" || !details.style.display) {
+                details.style.display = "block";
+                button.innerHTML = 'Highlights   <i class="fas fa-chevron-right arrow rotate"></i>';
+            } else {
+                details.style.display = "none";
+                button.innerHTML = 'Highlights <i class="fas fa-chevron-right arrow"></i>';
+            }
+        }
+
+
+
+        function navigateToPackage(element) {
+            const url = element.getAttribute('data-url');
+            if (url) {
+                window.location.href = "packages/" + url;
+            }
+        }
+
+
+    </script>
+
+    <script src="/assets/scripts/head_foot.js"></script>
+
+</body>
+
+</html>
