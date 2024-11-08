@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Packages</title>
+
+    <link rel="stylesheet" href="/assets/styles/packages.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/styles/head_foot.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <style>
+        .new-card{
+            display: flex;
+            width: 90%;
+    flex-direction: row;
+    padding: 20px;
+    align-items: center;
+    background-color: #919191;
+    margin: 0 auto;
+    justify-content: flex-start;
+
+    }
+.new-image-container{
+            display: flex;
+            object-fit: contain;
+            max-width: 500px;
+            /* overflow: hidden; */
+        }
+
+        .new-info{
+            background-color: #fff000 ;
+            /* width:60%; */
+            display: flex;
+            flex-direction: column;
+            height: 150px;
+            margin-left: -20px;
+            
+        }
+        .new-button{
+            display: flex;
+            margin-left: 20px;    
+            flex-direction: column;
+        }
+        
+
+        
+.testimonial-container {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    align-items: center;
+    background-color: #fdfdfd;
+}
+
+.test-banner {
+    flex-basis: 60%;
+}
+
+.test-banner img {
+    width: 100%;
+    max-height: 450px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.test-review-card {
+    display: flex;
+    /* flex-direction: row; */
+
+    /* changing to clumn for as the image size is too small */
+    /* flex-direction: column; */
+    
+    align-items: flex-start;
+    padding: 20px;
+    border-radius: 15px;
+    flex-basis: 40%;
+    background-color: blanchedalmond;
+    margin-left: -55px;
+}
+
+.test-review-card img {
+    max-width: 125px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: auto;
+    flex: 30%;
+}
+
+.review-text {
+    flex: 70%;
+    margin: 20px;
+}
+
+.review-text span {
+    font-weight: bold;
+    color: #d9534f;
+}
+
+
+
+
+
+.nue-package-card {
+    display: flex;
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 90%;
+    align-items: center;
+    margin: auto;
+}
+
+.nue-package-image-container {
+    position: relative;
+    width: 50%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+.nue-package-card a{
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit color from parent */
+    display: inline-block; /* Prevent it from affecting layout */
+}
+
+.nue-package-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.nue-package-info {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    /* width: 600px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-left: -20px; /* Slight overlap with the image */
+    z-index: 10;
+}
+
+.nue-package-title {
+    font-size: 1.4em;
+    color: #333;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.nue-package-duration {
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.nue-package-features {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.nue-feature {
+    background-color: #eee;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.9em;
+}
+
+.nue-feature.disabled {
+    opacity: 0.5;
+}
+
+.nue-hotel-details {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.nue-hotel-stars {
+    /* color: gold; */
+    /* color: #ed3237; */
+}
+
+.nue-package-price {
+    /* margin-top: 20px; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+.nue-enquiry-btn {
+    text-decoration: none;
+    background: linear-gradient(135deg, #FF512F 0%, #DD2476 100%);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.nue-enquiry-btn:hover {
+    background: linear-gradient(135deg, #DD2476 0%, #FF512F 100%);
+}
+
+.nue-viewmore-btn {
+    cursor: pointer;
+    color: blue;
+    font-weight: bold;
+}
+
+.nue-viewmore-btn:hover {
+    color: #dd2476;
+}
+
+
+
+
+
+
+
+    </style>
+
+
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="nav container">
+           <div class="nav__data">
+              <a href=".\" class="nav__logo">
+               <img src="/assets/files/logo.png" alt="Dhatch Logo">
+           </a>
+              
+              <div class="nav__toggle" id="nav-toggle">
+                 <i class="ri-menu-line nav__burger"></i>
+                 <i class="ri-close-line nav__close"></i>
+              </div>
+           </div>
+
+           <!-- NAV MENU -->
+           <div class="nav__menu" id="nav-menu">
+              <ul class="nav__list">
+                 <li><a href=".\" class="nav__link">Home</a></li>
+
+
+                 <!--=============== DROPDOWN 1 ===============-->
+                 <li class="dropdown__item">
+                    <div class="nav__link">
+                       Services<i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                    </div>
+
+                    <ul class="dropdown__menu">
+                       <li>
+                           <a href="/services.html#holiday-package" class="dropdown__link"> Holiday Package</a>                          
+                        </li><li>
+                           <a href="/services.html#air-ticket-booking" class="dropdown__link"> Air Ticket Booking</a>                          
+                        </li><li>
+                           <a href="/services.html#hotel-booking" class="dropdown__link"> Hotel Booking</a>                          
+                        </li><li>
+                           <a href="/services.html#visa" class="dropdown__link"> Visa Services</a>                          
+                        </li><li>
+                           <a href="/services.html#travel-insurance" class="dropdown__link"> Cab Services</a>                          
+                        </li><li>
+                           <a href="/services.html#cab-services" class="dropdown__link"> Travel Insurance</a>                          
+                        </li>
+
+                    </ul>
+                 </li>
+                 
+
+                 <li class="dropdown__item">
+                   <div class="nav__link">
+                      Packages <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                   </div>
+
+                   <ul class="dropdown__menu">
+                      <li>
+                         <a href="/packages.html#north-india" class="dropdown__link">North India</a>                          
+                      </li>
+                      <li>
+                          <a href="/packages.html#south-east-asia" class="dropdown__link">South East Asia</a>                          
+                       </li>
+                       <li><a href="/packages.html#singapore" class="dropdown__link">Singapore</a></li>
+                       <li><a href="/packages.html#malaysia" class="dropdown__link">Malaysia</a></li>
+
+                       <li>
+                          <a href="/packages.html#middle-east" class="dropdown__link">Middle East</a>                          
+                       </li>
+                       <li><a href="/packages.html#central-asia" class="dropdown__link">Central Asia</a></li>
+                       <li><a href="/packages.html#/europe" class="dropdown__link">Europe</a></li>
+                       <li><a href="/packages.html" class="dropdown__link">View All</a></li>
+                       </ul>
+                </li>
+
+                <li><a href="blogs.html" class="nav__link">Blog</a></li>
+                <li><a href="contact.html" class="nav__link">Contact</a></li>
+               </ul>
+           </div>
+        </nav>
+     </header>
+
+
+    <section class="package-section">
+
+        <!--  Singapore Standard Package -->
+        <div class="package-card">
+            <div class="image-and-info">
+                <div class="package-image-container" data-url="singapore-std-package.html"
+                    onclick="navigateToPackage(this)">
+                    <img src="/assets/files/cards/singapore-card.png"
+                        alt="Singapore" class="package-image">
+                </div>
+                <div class="package-info" data-url="singapore-std-package.html" onclick="navigateToPackage(this)">
+                    <h3 class="package-title">Singapore Standard Package</h3>
+                    <p class="package-duration">5 Days 4 Nights</p>
+                    <div class="package-features">
+                        <span class="feature"><i class="fas fa-bed"></i> Hotels</span>
+                        <span class="feature disabled"><i class="fas fa-plane"></i> Flights</span>
+                        <span class="feature"><i class="fas fa-utensils"></i> Meals</span>
+                        <span class="feature"><i class="fas fa-shuttle-van"></i> Transfers</span>
+                        <span class="feature"><i class="fas fa-binoculars"></i> Sightseeing</span>
+                    </div>
+                    <div class="hotel-details">
+                        <span><i class="fas fa-hotel"></i> </span>
+                        <span class="hotel-stars">★ ★ ★ ★ ☆</span>
+                    </div>
+                </div>
+            </div>
+            <div class="package-price">
+                <!-- <a href="#" class="enquiry-btn">View Details</a> -->
+                <a href="packages/singapore-std-package.html" class="enquiry-btn">Book Now</a>
+                <div class="viewmore-btn" onclick="toggleDetails(this)">
+                    Highlights <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+        </div>
+        <div class="more-details-card">
+            <ul>
+                <li>Comfortable stay with daily breakfast for 4 nights at the hotel.</li>
+                <li>Exciting Night Safari tour with convenient seat-in-coach transportation.</li>
+                <li>Visit iconic attractions like Gardens By The Bay and Sands Sky Park.</li>
+                <li>Enjoy a fun-filled day at Sentosa with rides and shows.</li>
+                <li>Hassle-free travel with all tours and transfers included.</li>
+            </ul>
+        </div>
+
+        
+        <div class="new-card">
+            <div class="new-image-container">
+                <img src="https://placehold.co/500x300/fff/000" alt="">
+            </div>
+            <a href="/packages/andaman-package.html">
+            <div class="new-info">
+                <h3 class="new-package-title">Singapore Standard Package</h3>
+                <p class="new-package-duration">5 Days 4 Nights</p>
+                <!-- <div class="new-package-features">
+                    <span class="feature"><i class="fas fa-bed"></i> Hotels</span>
+                    <span class="feature disabled"><i class="fas fa-plane"></i> Flights</span>
+                    <span class="feature"><i class="fas fa-utensils"></i> Meals</span>
+                    <span class="feature"><i class="fas fa-shuttle-van"></i> Transfers</span>
+                    <span class="feature"><i class="fas fa-binoculars"></i> Sightseeing</span>
+                </div> -->
+            </div>
+            <div class="new-button">
+                <!-- <a href="#" class="enquiry-btn">View Details</a> -->
+                <a href="packages/singapore-std-package.html" class="enquiry-btn">Book Now</a>
+                <div class="new-viewmore-btn" onclick="toggleDetails(this)">
+                    Highlights <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+        </a>
+        </div>
+
+
+
+
+
+        <div class="nue-package-card">
+            <div class="nue-package-image-container" data-url="singapore-std-package.html" onclick="navigateToPackage(this)">
+                <img src="/assets/files/cards/singapore-card.png" alt="Singapore" class="nue-package-image">
+            </div>
+            <a href="/packages/singapore-std-package.html">
+            <div class="nue-package-info" data-url="singapore-std-package.html" onclick="navigateToPackage(this)">
+                <h3 class="nue-package-title">Singapore Standard Package</h3>
+                <p class="nue-package-duration">5 Days 4 Nights</p>
+                <div class="nue-package-features">
+                    <span class="nue-feature"><i class="fas fa-bed"></i> Hotels</span>
+                    <span class="nue-feature disabled"><i class="fas fa-plane"></i> Flights</span>
+                    <span class="nue-feature"><i class="fas fa-utensils"></i> Meals</span>
+                    <span class="nue-feature"><i class="fas fa-shuttle-van"></i> Transfers</span>
+                    <span class="nue-feature"><i class="fas fa-binoculars"></i> Sightseeing</span>
+                </div>
+                <div class="nue-hotel-details">
+                    <span><i class="fas fa-hotel"></i></span>
+                    <span class="nue-hotel-stars">★ ★ ★ ★ ☆</span>
+                </div>
+                
+            </div>
+        </a>
+                    <div class="nue-package-price">
+                <a href="packages/singapore-std-package.html" class="nue-enquiry-btn">Book Now</a>
+                <div class="nue-viewmore-btn" onclick="toggleDetails(this)">
+                    Highlights <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+        </div>
+        
+        
+
+
+
+
+
+        <div class="testimonial-container">
+            <div class="test-banner">
+                <img src="https://images.pexels.com/photos/1446624/pexels-photo-1446624.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Banner Image">
+            </div>
+            <div class="test-review-card">
+                <img src="https://www.kitemedia.com/wp-content/uploads/2021/08/Online-Marketing-For-Franchises.jpeg" alt="Reviewer Image">
+                <div class="review-text">
+                    <p>"The trip was well-organized, and I felt <span>safe and comfortable</span> every step of the way. The team went above and beyond to ensure we had the best time. Highly recommend!"</p>
+                    <p><span> - Brian W</span></p>
+                </div>
+            </div>
+        </div>
+    
+    
+
+
+
+ 
+        <footer class="footer">
+            <div class="footer-container">
+              <!-- Company Information -->
+              <div class="footer-section company-info">
+                <img src="/assets/files/logo2.png" alt="">
+                <p>First Floor, Vaigarai block, St, Paul's complex,</p>
+                <p>99/1, near Head post office signal,Sangillyandapuram, </p>
+                <p> Tiruchirappalli, Tamil Nadu 620001</p>
+                <p>Email:
+                <a href="mailto:dhatchtnt@gmail.com" style="color: blue;"> dhatchtnt@gmail.com</a><br>
+            </p>
+                <p>Phone:
+                <a href="tel:+918925923750" style="color: blue;">+91 89259 23750</a><br>
+                <a href="tel:+918925923751" style="color: blue;"> +91 89259 23751</a><br>
+                <a href="tel:+917373773443" style="color: blue;"> +91 73737 73443</a>
+                </p>
+              </div>
+          
+              <!-- Quick Links -->
+              <div class="footer-section quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                  <li><a href="/about.html">About Us</a></li>
+                  <li><a href="/services.html">Services</a></li>
+                  <li><a href="/packages.html">Holiday Packages</a></li>
+                  <li><a href="/contact.html">Contact Us</a></li>
+                </ul>
+              </div>
+          
+              <!-- Social Media Links -->
+              <div class="footer-section social-media">
+                <h3>Follow Us</h3>
+                <a href="https://www.facebook.com/people/Dhatch-Tours-Travels/61566988809950/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/800px-2021_Facebook_icon.svg.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/dhatch_travels" target="_blank"><img src="https://img.icons8.com/fluency/48/instagram-new.png" alt="Instagram"></a>
+                <a href="https://www.threads.net/@dhatch_travels" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Threads_%28app%29_logo.svg/2048px-Threads_%28app%29_logo.svg.png" alt="Threads"></a>
+                <a href="https://wa.me/8925923750" target="_blank"><img src="https://png.pngtree.com/png-vector/20221018/ourmid/pngtree-whatsapp-mobile-software-icon-png-image_6315991.png" alt="WhatsApp"></a>
+              </div>
+          
+              <!-- Newsletter Subscription -->
+              <div class="footer-section newsletter">
+                <h3>Newsletter</h3>
+                <form action="#">
+                  <input type="email" placeholder="Your email address" required>
+                  <button type="submit">Subscribe</button>
+                </form>
+              </div>
+            </div>
+          
+            <!-- Copyright -->
+            <div class="footer-bottom">
+              <p>&copy; 2024 Dhatch Tours & Travels | Designed by <a href="https://arknishinvent.com/" target="_blank">ArkNish Invent</a></p>
+            </div>
+          </footer>
+        
+        <script src="/assets/scripts/head_foot.js"></script>
+    
+    
+    
+        <script>
+    
+    
+    
+            window.addEventListener('load', () => {
+                document.querySelectorAll('.more-details-card').forEach(card => {
+                    card.style.display = 'none';
+                });
+            });
+    
+    
+            function toggleDetails(button) {
+                const details = button.closest('.package-card').nextElementSibling;
+                const arrow = button.querySelector('.arrow');
+                if (details.style.display === "none" || !details.style.display) {
+                    details.style.display = "block";
+                    button.innerHTML = 'Highlights   <i class="fas fa-chevron-right arrow rotate"></i>';
+                } else {
+                    details.style.display = "none";
+                    button.innerHTML = 'Highlights <i class="fas fa-chevron-right arrow"></i>';
+                }
+            }
+    
+    
+    
+            function navigateToPackage(element) {
+                const url = element.getAttribute('data-url');
+                if (url) {
+                    window.location.href = "packages/" + url;
+                }
+            }
+    
+    
+        </script>
+    
+        <script src="/assets/scripts/head_foot.js"></script>
+    
+    </body>
+    
+    </html>
