@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Quicksand';
-    font-family:    "Montserrat", sans-serif;
+    /* font-family:    "Montserrat", sans-serif; */
     /* font-family: century-gothic, sans-serif; */
     font-style: normal;
     font-weight: normal;
@@ -300,7 +300,11 @@ body {
 }
 
 .service-card {
-    background: linear-gradient(135deg, #ffe5dd, #feffbb);;
+    /* background: linear-gradient(135deg, #ffeee9, #fffaf8);; */
+    /* background: linear-gradient(135deg, #ffdad8, #fff8c2); --yellow  */
+    background: linear-gradient(135deg, #ffdad8, #fffce5); 
+    /* background: linear-gradient(135deg, #f8876c, #6e6176);; */
+    /* background: #9e2a2e; */
     border-radius: 10px;
     text-align: center;
     padding: 20px;
@@ -328,14 +332,15 @@ body {
 }
 
 .service-icon img {
-    width: 80px;
-    height: 80px;
-    margin-bottom: 15px;
+    width: 70px;
+    height: 70px;
+    margin: 15px auto; 
 }
 
 .service-card h3 {
     color: #000000;
     font-size: 18px;
+    /* font-family: "Quicksand"; */
     font-weight: 600;
 }
 
@@ -465,7 +470,10 @@ body {
     padding: 50px 20px;
     background-color: #f9f9f9; /* Light background color for contrast */
     text-align: center; /* Center the content */
-    background-image: url('assets/files/wave.png');
+    /* background-image: url('assets/files/wave.png'); */
+    /* background-image: url('/assets/files/poly_solid.png'); */
+    background-repeat: repeat;
+    object-fit: fill;
 }
 
 /* Title styling */
@@ -476,6 +484,7 @@ body {
     margin-bottom: 30px; /* Space below title */
     cursor: pointer; /* Change cursor on hover */
     transition: color 0.3s, text-decoration 0.3s; 
+    background-color: white;
 }
 
 /* Title hover effect */
@@ -509,10 +518,14 @@ body {
     /* gap: 30px;  */
     max-width: 1200px; /* Limit max width */
     margin: 0 auto; /* Center the container */
+    z-index: 100;
+    /* background-image: url(/assets/files/poly_solid.png); */
 }
 
 /* Individual item styling */
 .why-us-item {
+    /* background-color: #fffef4; */
+/* #fffef6 */
     border-radius: 10px; 
     padding: 20px; /* Inner spacing */
     transition: transform 0.3s, box-shadow 0.3s; /* Smooth scaling transition */
@@ -801,7 +814,8 @@ textarea {
     padding: 20px;
     border-radius: 15px;
     flex-basis: 40%;
-    background-color: blanchedalmond;
+    /* background-color: blanchedalmond; */
+    background-color: #faf3e8;
     margin-left: -55px;
 }
 

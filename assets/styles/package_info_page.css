@@ -7,6 +7,7 @@
 body {
     background: linear-gradient(to left, #ffffff, #f1fffb); 
     font-family: 'Quicksand';
+    /* font-family: 'Roboto', sans-serif;  */
 }
 
 strong{
@@ -261,7 +262,7 @@ strong{
     border-radius: 12px;
 }
 .submit-button:hover {
-    background: #c10000; /* Hover color */
+    background: linear-gradient(350deg, #ca0000, #ee3237); /* Gradient button */
 }
         /* esseitnal info container */
 .essential-info-container {
