@@ -468,7 +468,7 @@ body {
 /* General styling for the section */
 .why-us-container {
     padding: 50px 20px;
-    background-color: #f9f9f9; /* Light background color for contrast */
+    background-color: #fff; /* Light background color for contrast */
     text-align: center; /* Center the content */
     /* background-image: url('assets/files/wave.png'); */
     /* background-image: url('/assets/files/poly_solid.png'); */

@@ -6,6 +6,8 @@
 
 body{
     font-family: 'Quicksand';
+    padding-top: 0px; /* Adjust this to the height of your header */
+    margin: 0px;
     /* font-family: 'Times New Roman', Times, serif; */
     /* overflow-x: hidden; */
 }
@@ -13,6 +15,10 @@ body{
 /* h3{
     font-family: 'Montserrat', sans-serif;
 } */
+
+header{
+    margin: 0 !important;
+}
 
 .new-card{
     display: flex;

@@ -174,7 +174,7 @@ a {
     width: 0;
   }
   .nav__list {
-    background-color: var(--black-color);
+    background-color: var(--black-color-light);
     padding-top: 1rem;
   }
 }
