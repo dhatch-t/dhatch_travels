@@ -29,6 +29,28 @@ body {
     overflow-x: hidden;
 }
 
+
+/* map */
+.map-container{
+    display: flex;
+}
+
+.map-loc{
+    width: 50%;
+    min-height: 450px;
+}
+
+@media (max-width: 768px) {
+    .map-container{
+        flex-direction: column;
+    }
+    .map-loc{
+        width: 100%;
+    }    
+}
+
+
+/* form */
 .form-container {
     position: relative;
     display: flex;
