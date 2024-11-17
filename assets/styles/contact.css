@@ -29,24 +29,98 @@ body {
     overflow-x: hidden;
 }
 
+h1{
+    color: #ed3237;
+    font-size: 2rem;
+    margin: 10px auto;
+    /* margin-left: 15px; */
+    font-weight: 700;
+    text-align: center;
+}
+    
 
-/* map */
-.map-container{
+/* Map container styling */
+.map-container {
     display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    align-items: center;
 }
 
-.map-loc{
+/* Map iframe styling */
+.map-loc {
     width: 50%;
     min-height: 450px;
+    border: 0;
+    border-radius: 8px;
 }
 
-@media (max-width: 768px) {
-    .map-container{
-        flex-direction: column;
-    }
-    .map-loc{
-        width: 100%;
-    }    
+/* Details section styling */
+.map-details {
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+}
+
+/* Header styling */
+.map-details h3 {
+    color: #ed3237;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Paragraph styling */
+.map-details p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Contact info container */
+.map-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Each contact row */
+.contact-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Icon styling */
+.contact-row img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Link styling */
+.contact-row a {
+    color: #ed3237;
+
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.contact-row a:hover {
+    text-decoration: underline;
+}
+
+/* Location text styling */
+.contact-row p {
+    font-size: 1rem;
+    color: #555;
+    margin: 0;
 }
 
 

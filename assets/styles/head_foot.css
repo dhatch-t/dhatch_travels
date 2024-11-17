@@ -416,6 +416,10 @@ color: red;
   }
 
   
+  .footer-section.company-info p{
+    text-align: start;
+    margin-left: 15px;
+  }
   
   .footer-section ul {
     list-style-type: none;
