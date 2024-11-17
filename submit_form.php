@@ -1,5 +1,10 @@
 <?php
 // Database connection details
+
+var_dump($_POST);
+exit;
+
+
 $servername = "localhost";
 $username = "u860777907_dhatchtnt";
 $password = "dhatchDB@2024";
@@ -12,7 +17,7 @@ $email = $_POST['email'] ?? 'Not provided';
 $destination = $_POST['destination'] ?? null;
 $travel_date = $_POST['travel_date'] ?? null;
 $num_people = $_POST['num_people'] ?? null;
-$source_page = $_POST['source_page'] ?? 'Unknown';
+$source_page = $_POST['source_page'] ?? 'Home/Contact';
 
 // Check if required fields are present
 // if (!$name || !$phone || !$destination || !$travel_date || !$num_people) {
