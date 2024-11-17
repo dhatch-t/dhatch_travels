@@ -112,16 +112,6 @@
             </div>
 
 
-            To accommodate this form and identify the page each request originates from, we can make the following updates to submit_form.php:
-
-            Add fields for "Destination," "Date of Travel," "Number of People," and the "Source Page" (which indicates where the form is submitted).
-            Modify the form’s HTML to include a hidden field for the source page name.
-            Update the PHP script to handle these additional fields and store them in the database.
-            Updated HTML Form
-            Here’s an updated form with a hidden input for the source page name. Modify the value of the hidden input dynamically on each page to reflect the package or page name (e.g., "Singapore Standard Package").
-            
-            html
-            Copy code
             <form class="mobile-enquiry-form" action="submit_form.php" method="POST">
                 <input type="text" name="name" placeholder="Name" required>
                 <input type="tel" name="phone" placeholder="Phone Number" required>
@@ -227,20 +217,7 @@
                 </div>
             </div>
 
-
-To accommodate this form and identify the page each request originates from, we can make the following updates to submit_form.php:
-
-Add fields for "Destination," "Date of Travel," "Number of People," and the "Source Page" (which indicates where the form is submitted).
-Modify the form’s HTML to include a hidden field for the source page name.
-Update the PHP script to handle these additional fields and store them in the database.
-Updated HTML Form
-Here’s an updated form with a hidden input for the source page name. Modify the value of the hidden input dynamically on each page to reflect the package or page name (e.g., "Singapore Standard Package").
-
-html
-Copy code
-
-
-            <form class="enquiry-form" action="submit_form.php" method="POST">
+            <form class="enquiry-form" action="/submit_form.php" method="POST">
                 <span><strong>Book Now</strong></span>
                 <input type="text" name="name" placeholder="Name" required>
                 <input type="tel" name="phone" placeholder="Phone Number" required>
