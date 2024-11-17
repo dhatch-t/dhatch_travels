@@ -29,6 +29,7 @@ try {
     // Establish connection
     $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $conn->exec("SET time_zone = '+05:30'");
 
     // SQL query to insert form data (timestamp is automatically added by MySQL)
     $stmt = $conn->prepare("INSERT INTO form_submissions (name, phone, email, destination, travel_date, num_people, source_page) 
