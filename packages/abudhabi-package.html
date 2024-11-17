@@ -111,13 +111,26 @@
                 </div>
             </div>
 
-            <form class="mobile-enquiry-form">
-                <input type="text" placeholder="Name" required>
-                <input type="tel" placeholder="Phone Number" required>
-                <input type="email" placeholder="Email (optional)">
-                <input type="text" placeholder="Destination" required>
-                <input placeholder="Date of Travel" class="textbox-n" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date" />
-                <input type="number" placeholder="Number of People" min="1" required>
+
+            To accommodate this form and identify the page each request originates from, we can make the following updates to submit_form.php:
+
+            Add fields for "Destination," "Date of Travel," "Number of People," and the "Source Page" (which indicates where the form is submitted).
+            Modify the form’s HTML to include a hidden field for the source page name.
+            Update the PHP script to handle these additional fields and store them in the database.
+            Updated HTML Form
+            Here’s an updated form with a hidden input for the source page name. Modify the value of the hidden input dynamically on each page to reflect the package or page name (e.g., "Singapore Standard Package").
+            
+            html
+            Copy code
+            <form class="mobile-enquiry-form" action="submit_form.php" method="POST">
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="tel" name="phone" placeholder="Phone Number" required>
+                <input type="email" name="email" placeholder="Email (optional)">
+                <input type="text" name="destination" placeholder="Destination" required>
+                <input name="travel_date" placeholder="Date of Travel" class="textbox-n" type="text"
+                       onfocus="(this.type='date')" onblur="(this.type='text')" id="date" required>
+                <input type="number" name="num_people" placeholder="Number of People" min="1" required>
+                <input type="hidden" name="source_page" value="Singapore Standard Package"> <!-- Adjust the value as needed -->
                 <button type="submit" class="submit-button">Send Enquiry</button>
             </form>
 
@@ -214,15 +227,29 @@
                 </div>
             </div>
 
-            <form class="enquiry-form">
+
+To accommodate this form and identify the page each request originates from, we can make the following updates to submit_form.php:
+
+Add fields for "Destination," "Date of Travel," "Number of People," and the "Source Page" (which indicates where the form is submitted).
+Modify the form’s HTML to include a hidden field for the source page name.
+Update the PHP script to handle these additional fields and store them in the database.
+Updated HTML Form
+Here’s an updated form with a hidden input for the source page name. Modify the value of the hidden input dynamically on each page to reflect the package or page name (e.g., "Singapore Standard Package").
+
+html
+Copy code
+
+
+            <form class="enquiry-form" action="submit_form.php" method="POST">
                 <span><strong>Book Now</strong></span>
-                <input type="text" placeholder="Name" required>
-                <input type="tel" placeholder="Phone Number" required>
-                <input type="email" placeholder="Email (optional)">
-                <input type="text" placeholder="Destination" required>
-                <input placeholder="Date of Travel" class="textbox-n" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date" />
-                <input type="number" placeholder="Number of People" min="1" required>
-                <button type="submit" class="submit-button">Send Enquiry</button>
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="tel" name="phone" placeholder="Phone Number" required>
+                <input type="email" name="email" placeholder="Email (optional)">
+                <input type="text" name="destination" placeholder="Destination" required>
+                <input name="travel_date" placeholder="Date of Travel" class="textbox-n" type="text"
+                       onfocus="(this.type='date')" onblur="(this.type='text')" id="date" required>
+                <input type="number" name="num_people" placeholder="Number of People" min="1" required>
+                <input type="hidden" name="source_page" value="Abudhabi Package"> <!-- Adjust the value as needed -->              <button type="submit" class="submit-button">Send Enquiry</button>
             </form>
         </div>
     </div>
