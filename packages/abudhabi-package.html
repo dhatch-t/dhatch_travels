@@ -78,7 +78,7 @@
                        </ul>
                 </li>
 
-                <li><a href="blogs.html" class="nav__link">Blog</a></li>
+                <li><a href="blogs" class="nav__link">Blog</a></li>
                 <li><a href="contact.html" class="nav__link">Contact</a></li>
                </ul>
            </div>
@@ -118,7 +118,8 @@
                 <input type="email" name="email" placeholder="Email (optional)">
                 <input type="text" name="destination" placeholder="Destination" required>
                 <input name="travel_date" placeholder="Date of Travel" class="textbox-n" type="text"
-                       onfocus="(this.type='date')" onblur="(this.type='text')" id="date" required>
+                onfocus="(this.type='date'); this.min = new Date().toISOString().split('T')[0]" 
+                onblur="(this.type='text')" id="date" required>   <input type="number" name="num_people" placeholder="Number of People" min="1" required>
                 <input type="number" name="num_people" placeholder="Number of People" min="1" required>
                 <input type="hidden" name="source_page" value="Singapore Standard Package"> <!-- Adjust the value as needed -->
                 <button type="submit" class="submit-button">Send Enquiry</button>
@@ -224,9 +225,11 @@
                 <input type="email" name="email" placeholder="Email (optional)">
                 <input type="text" name="destination" placeholder="Destination" required>
                 <input name="travel_date" placeholder="Date of Travel" class="textbox-n" type="text"
-                       onfocus="(this.type='date')" onblur="(this.type='text')" id="date" required>
+                onfocus="(this.type='date'); this.min = new Date().toISOString().split('T')[0]" 
+                onblur="(this.type='text')" id="date" required>   
                 <input type="number" name="num_people" placeholder="Number of People" min="1" required>
-                <input type="hidden" name="source_page" value="Abudhabi Package"> <!-- Adjust the value as needed -->              <button type="submit" class="submit-button">Send Enquiry</button>
+                <input type="hidden" name="source_page" value="Abudhabi Package 6D/5N">
+                <button type="submit" class="submit-button">Send Enquiry</button>
             </form>
         </div>
     </div>
