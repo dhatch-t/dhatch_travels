@@ -15,10 +15,10 @@ $num_people = $_POST['num_people'] ?? null;
 $source_page = $_POST['source_page'] ?? 'Unknown';
 
 // Check if required fields are present
-if (!$name || !$phone || !$destination || !$travel_date || !$num_people) {
-    echo "Error: All required fields must be filled out.";
-    exit;
-}
+// if (!$name || !$phone || !$destination || !$travel_date || !$num_people) {
+//     echo "Error: All required fields must be filled out.";
+//     exit;
+// }
 
 try {
     // Establish connection
