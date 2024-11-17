@@ -1,8 +1,8 @@
 <?php
 // Database connection details
 
-var_dump($_POST);
-exit;
+// var_dump($_POST);
+// exit;
 
 
 $servername = "localhost";
