@@ -355,13 +355,13 @@
                 <p>Fill out the form below and we'll get back to you as soon as possible.</p>
             </div>
             <div class="form-wrapper">
-                <form action="submit_form.php" method="POST">
-                    <input type="text" placeholder="Name*" required>
-                    <input type="email" placeholder="Email (optional)">
-                    <input type="tel" placeholder="Phone*" required>
-                    <input type="text" placeholder="Destination*" required>
-                    <textarea placeholder="Message" required></textarea>
-                    <div class="checkbox">
+                <form action="/submit_form.php" method="POST">
+                    <input type="text" name="name" placeholder="Name*" required>
+                    <input type="email" name="email" placeholder="Email (optional)">
+                    <input type="tel" name="phone" placeholder="Phone*" required>
+                    <input type="text" name="destination" placeholder="Destination*" required>
+                    <textarea name="message" placeholder="Message" required></textarea>
+                   <div class="checkbox">
                         <input type="checkbox" required> I agree to the 
                         <a href="#">privacy policy</a>.
                     </div>
