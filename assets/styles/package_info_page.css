@@ -164,8 +164,8 @@ strong{
         .itinerary-container li{
             padding: 5px;
             font-size: 17px;
-            list-style: inside circle;
-            margin-left: 10px;
+            list-style: outside circle;
+            margin-left: 25px;
         }
         .itinerary-item {
             border-bottom: 1px solid #ddd;
