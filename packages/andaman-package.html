@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1FQVME2N3T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1FQVME2N3T');
+</script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Port Blair, Havelock, and Neil Island</title>
@@ -78,7 +87,7 @@
                        </ul>
                 </li>
 
-                <li><a href="blogs" class="nav__link">Blog</a></li>
+                <li><a href="/blogs" class="nav__link">Blog</a></li>
                 <li><a href="contact.html" class="nav__link">Contact</a></li>
                </ul>
            </div>
@@ -108,13 +117,16 @@
                 </div>
             </div>
 
-            <form class="mobile-enquiry-form">
-                <input type="text" placeholder="Name" required>
-                <input type="tel" placeholder="Phone Number" required>
-                <input type="email" placeholder="Email (optional)">
-                <input type="text" placeholder="Destination" required>
-                <input placeholder="Date of Travel" class="textbox-n" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date" />
-                <input type="number" placeholder="Number of People" min="1" required>
+            <form class="mobile-enquiry-form" action="/submit_form.php" method="POST">
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="tel" name="phone" placeholder="Phone Number" required>
+                <input type="email" name="email" placeholder="Email (optional)">
+                <input type="text" name="destination" placeholder="Destination" required>
+                <input name="travel_date" placeholder="Date of Travel" class="textbox-n" type="text"
+                onfocus="(this.type='date'); this.min = new Date().toISOString().split('T')[0]" 
+                onblur="(this.type='text')" id="date" required> 
+                <input type="number" name="num_people" placeholder="Number of People" min="1" required>
+                <input type="hidden" name="source_page" value="Port Blair, Havelock, and Neil Island 6D/5N">
                 <button type="submit" class="submit-button">Send Enquiry</button>
             </form>
 
@@ -224,16 +236,20 @@
                 </div>
             </div>
 
-            <form class="enquiry-form">
+            <form class="enquiry-form" action="/submit_form.php" method="POST">
                 <span><strong>Book Now</strong></span>
-                <input type="text" placeholder="Name" required>
-                <input type="tel" placeholder="Phone Number" required>
-                <input type="email" placeholder="Email (optional)">
-                <input type="text" placeholder="Destination" required>
-                <input placeholder="Date of Travel" class="textbox-n" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date" />
-                <input type="number" placeholder="Number of People" min="1" required>
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="tel" name="phone" placeholder="Phone Number" required>
+                <input type="email" name="email" placeholder="Email (optional)">
+                <input type="text" name="destination" placeholder="Destination" required>
+                <input name="travel_date" placeholder="Date of Travel" class="textbox-n" type="text"
+                onfocus="(this.type='date'); this.min = new Date().toISOString().split('T')[0]" 
+                onblur="(this.type='text')" id="date" required>   
+                <input type="number" name="num_people" placeholder="Number of People" min="1" required>
+                <input type="hidden" name="source_page" value="">
                 <button type="submit" class="submit-button">Send Enquiry</button>
             </form>
+            
         </div>
     </div>
 
