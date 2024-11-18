@@ -35,7 +35,7 @@
         <nav class="nav container">
            <div class="nav__data">
               <a href=".\" class="nav__logo">
-               <img src="assets/files/logo.png" alt="Dhatch Logo">
+               <img src="/assets/files/logo.png" alt="Dhatch Logo">
            </a>
               
               <div class="nav__toggle" id="nav-toggle">
@@ -47,7 +47,7 @@
            <!-- NAV MENU -->
            <div class="nav__menu" id="nav-menu">
               <ul class="nav__list">
-                 <li><a href=".\" class="nav__link">Home</a></li>
+                 <li><a href="..\" class="nav__link">Home</a></li>
 
 
                  <!--=============== DROPDOWN 1 ===============-->
@@ -131,17 +131,19 @@
                     <!-- ₹40,503 -->
                 </div>
             </div>
-            <form class="mobile-enquiry-form">
-                <input type="text" placeholder="Name" required>
-                <input type="tel" placeholder="Phone Number" required>
-                <input type="email" placeholder="Email (optional)">
-                <input type="text" placeholder="Destination" required>
-                <input  placeholder="Date of Travel" class="textbox-n" type="text"
-      onfocus="(this.type='date')" onblur="(this.type='text')" id="date" />
-                <!-- <input type="date" placeholder="Date of Travel" required> -->
-                <input type="number" placeholder="Number of People" min="1" required>
+            <form class="mobile-enquiry-form" action="/submit_form.php" method="POST">
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="tel" name="phone" placeholder="Phone Number" required>
+                <input type="email" name="email" placeholder="Email (optional)">
+                <input type="text" name="destination" placeholder="Destination" required>
+                <input name="travel_date" placeholder="Date of Travel" class="textbox-n" type="text"
+                onfocus="(this.type='date'); this.min = new Date().toISOString().split('T')[0]" 
+                onblur="(this.type='text')" id="date" required> 
+                <input type="number" name="num_people" placeholder="Number of People" min="1" required>
+                <input type="hidden" name="source_page" value="Template D/N "> 
                 <button type="submit" class="submit-button">Send Enquiry</button>
             </form>
+
             <div class="itinerary-container">
                 
                 <h3>Details</h3>
@@ -200,16 +202,17 @@
                 </div>
             </div>
 
-            <form class="enquiry-form">
-                <span> <strong>Book Now</strong> </span>
-                <input type="text" placeholder="Name" required>
-                <input type="tel" placeholder="Phone Number" required>
-                <input type="email" placeholder="Email (optional)">
-                <input type="text" placeholder="Destination" required>
-                <input  placeholder="Date of Travel" class="textbox-n" type="text"
-                onfocus="(this.type='date')" onblur="(this.type='text')" id="date" />          
-                <!-- <input type="date" placeholder="Date of Travel" required> -->
-                <input type="number" placeholder="Number of People" min="1" required>
+            <form class="enquiry-form" action="/submit_form.php" method="POST">
+                <span><strong>Book Now</strong></span>
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="tel" name="phone" placeholder="Phone Number" required>
+                <input type="email" name="email" placeholder="Email (optional)">
+                <input type="text" name="destination" placeholder="Destination" required>
+                <input name="travel_date" placeholder="Date of Travel" class="textbox-n" type="text"
+                onfocus="(this.type='date'); this.min = new Date().toISOString().split('T')[0]" 
+                onblur="(this.type='text')" id="date" required>   
+                <input type="number" name="num_people" placeholder="Number of People" min="1" required>
+                <input type="hidden" name="source_page" value="Template D/N">
                 <button type="submit" class="submit-button">Send Enquiry</button>
             </form>
         </div>
@@ -281,7 +284,7 @@
         <div class="footer-container">
           <!-- Company Information -->
           <div class="footer-section company-info">
-            <img src="assets/files/logo2.png" alt="">
+            <img src="/assets/files/logo2.png" alt="">
             <p>First Floor, Vaigarai block, St, Paul's complex,</p>
             <p>99/1, near Head post office signal,Sangillyandapuram, </p>
             <p> Tiruchirappalli, Tamil Nadu 620001</p>
@@ -337,7 +340,6 @@
     <img src="https://png.pngtree.com/png-vector/20221018/ourmid/pngtree-whatsapp-mobile-software-icon-png-image_6315991.png" alt="WhatsApp" />
 </a>
 
-  
 
 
 
