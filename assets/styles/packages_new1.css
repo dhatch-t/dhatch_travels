@@ -100,6 +100,9 @@ header{
     opacity: 0.5;
 }
 
+.feature i{
+    margin-right: 4px;
+}
 
 .new-enquiry-btn{
     position: relative;
