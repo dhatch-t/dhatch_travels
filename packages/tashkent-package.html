@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tashkent</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="stylesheet" href="../assets/styles/package_info_page.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/styles/head_foot.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="nav container">
+        <div class="nav__data">
+          <a href=".\" class="nav__logo">
+            <img src="/assets/files/logo.png" alt="Dhatch Logo" />
+          </a>
+
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line nav__burger"></i>
+            <i class="ri-close-line nav__close"></i>
+          </div>
+        </div>
+
+        <!-- NAV MENU -->
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li><a href=".\" class="nav__link">Home</a></li>
+
+            <!--=============== DROPDOWN 1 ===============-->
+            <li class="dropdown__item">
+              <div class="nav__link">
+                Services<i class="ri-arrow-down-s-line dropdown__arrow"></i>
+              </div>
+
+              <ul class="dropdown__menu">
+                <li>
+                  <a
+                    href="/services.html#holiday-package"
+                    class="dropdown__link"
+                  >
+                    Holiday Package</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/services.html#air-ticket-booking"
+                    class="dropdown__link"
+                  >
+                    Air Ticket Booking</a
+                  >
+                </li>
+                <li>
+                  <a href="/services.html#hotel-booking" class="dropdown__link">
+                    Hotel Booking</a
+                  >
+                </li>
+                <li>
+                  <a href="/services.html#visa" class="dropdown__link">
+                    Visa Services</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/services.html#travel-insurance"
+                    class="dropdown__link"
+                  >
+                    Cab Services</a
+                  >
+                </li>
+                <li>
+                  <a href="/services.html#cab-services" class="dropdown__link">
+                    Travel Insurance</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="dropdown__item">
+              <div class="nav__link">
+                Packages <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+              </div>
+
+              <ul class="dropdown__menu">
+                <li>
+                  <a href="/packages.html#north-india" class="dropdown__link"
+                    >North India</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/packages.html#south-east-asia"
+                    class="dropdown__link"
+                    >South East Asia</a
+                  >
+                </li>
+                <li>
+                  <a href="/packages.html#singapore" class="dropdown__link"
+                    >Singapore</a
+                  >
+                </li>
+                <li>
+                  <a href="/packages.html#malaysia" class="dropdown__link"
+                    >Malaysia</a
+                  >
+                </li>
+
+                <li>
+                  <a href="/packages.html#middle-east" class="dropdown__link"
+                    >Middle East</a
+                  >
+                </li>
+                <li>
+                  <a href="/packages.html#central-asia" class="dropdown__link"
+                    >Central Asia</a
+                  >
+                </li>
+                <li>
+                  <a href="/packages.html#/europe" class="dropdown__link"
+                    >Europe</a
+                  >
+                </li>
+                <li>
+                  <a href="/packages.html" class="dropdown__link">View All</a>
+                </li>
+              </ul>
+            </li>
+
+            <li><a href="blogs.html" class="nav__link">Blog</a></li>
+            <li><a href="contact.html" class="nav__link">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div class="full-container">
+      <!-- Left Section -->
+      <div class="left-section">
+        <div class="package-slider">
+          <div class="slide">
+            <img src="/assets/files/slides/tashkent-3.jpg" alt="Tashkent 1" />
+          </div>
+          <div class="slide">
+            <img src="/assets/files/slides/tashkent-2.jpg" alt="Tashkent 2" />
+          </div>
+          <div class="slide">
+            <img src="/assets/files/slides/tashkent-1.jpg" alt="Tashkent 3" />
+          </div>
+          <div class="slide">
+            <img src="/assets/files/slides/tashkent-4.jpg" alt="Tashkent 4" />
+          </div>
+        </div>
+
+        <div class="mobile-details-container">
+          <h2>Tashkent</h2>
+          <div class="package-info">
+            <span class="duration">Package Duration: 5 Days / 4 Nights</span>
+            <!-- <span class="validity">Package Validity: 06 Sep 2024 - 31 Mar 2025</span> -->
+          </div>
+          <div class="price">
+            <!-- ₹40,503 -->
+          </div>
+        </div>
+        <form class="mobile-enquiry-form">
+          <input type="text" placeholder="Name" required />
+          <input type="tel" placeholder="Phone Number" required />
+          <input type="email" placeholder="Email (optional)" />
+          <input type="text" placeholder="Destination" required />
+          <input
+            placeholder="Date of Travel"
+            class="textbox-n"
+            type="text"
+            onfocus="(this.type='date')"
+            onblur="(this.type='text')"
+            id="date"
+          />
+          <!-- <input type="date" placeholder="Date of Travel" required> -->
+          <input
+            type="number"
+            placeholder="Number of People"
+            min="1"
+            required
+          />
+          <button type="submit" class="submit-button">Send Enquiry</button>
+        </form>
+        <div class="itinerary-container">
+          <h3>Details</h3>
+
+          <ul>
+            <li>Explore the vibrant city of Tashkent.</li>
+            <li>
+              Visit iconic landmarks like Independence Square, Amir Temur
+              Square, and the TV Tower.
+            </li>
+            <li>Enjoy snow activities in the Chimgam Mountains.</li>
+            <li>Relax by the picturesque Charvak Lake.</li>
+            <li>
+              Experience Indian meals, shopping, and Gala Party Dinners every
+              evening.
+            </li>
+          </ul>
+
+          <h3>Itinerary</h3>
+
+                <div class="itinerary-item" onclick="toggleContent(this)">
+                    <h4>Day 1: Arrival in Tashkent <span class="toggle-icon">&#129170</span> </h4>
+                    <div class="itinerary-content">
+                        <p>Welcome to Singapore! Transfer to your hotel. Evening at leisure.</p>
+                    </div>
+                </div>
+                <div class="itinerary-item" onclick="toggleContent(this)">
+                    <h4>  Day 2: Chimgam Mountains and Charvak Lake <span class="toggle-icon">&#129170</span></h4>
+                    <div class="itinerary-content">
+                        <p>Chimgam Mountains and Charvak Lake
+        After breakfast, visit Chimgam Mountains for snow activities and enjoy Charvak Lake. End the day with a Gala Party Dinner. Overnight stay at the hotel.</p>
+                    </div>
+                </div>
+                <div class="itinerary-item" onclick="toggleContent(this)">
+                    <h4>Day 3: City Tour and Shopping <span class="toggle-icon">&#129170</span></h4>
+                    <div class="itinerary-content">
+                        <p> After breakfast, visit the Lal Bahadur Shastri Memorial, the Tashkent TV Tower, and spend time shopping. End the day with a Gala Party Dinner. Overnight stay at the hotel.</p>
+                    </div>
+                </div>
+                <div class="itinerary-item" onclick="toggleContent(this)">
+                    <h4> Day 4: Leisure and 3D Show<span class="toggle-icon">&#129170</span> </h4>
+                    <div class="itinerary-content">
+                        <p>After breakfast, watch a 3D Show. Post-lunch, enjoy free time to explore the city at your leisure. End the day with a Gala Party Dinner. Overnight stay at the hotel.</p>
+                    </div>
+                </div>
+                <div class="itinerary-item" onclick="toggleContent(this)">
+                    <h4>Day 5: Departure <span class="toggle-icon">&#129170</span></h4>
+                    <div class="itinerary-content">
+                        <p> After breakfast, check out from the hotel. Visit Alay Market, Samarkand Darwaja, and Tsum Hall for shopping. Transfer to the airport for your flight to Delhi and onward to Chennai.</p>
+                    </div>
+                </div>
+        </div>
+      </div>
+
+      <!-- Right Section -->
+      <div class="right-section">
+        <div class="details-container">
+          <h2>Tashkent</h2>
+          <div class="package-info">
+            <span class="duration">Package Duration: 5 Days / 4 Nights</span>
+            <!-- <span class="validity">Package Validity: 06 Sep 2024 - 31 Mar 2025</span> -->
+          </div>
+          <div class="price">
+            <!-- ₹40,503 -->
+          </div>
+        </div>
+
+        <form class="enquiry-form">
+          <span> <strong>Book Now</strong> </span>
+          <input type="text" placeholder="Name" required />
+          <input type="tel" placeholder="Phone Number" required />
+          <input type="email" placeholder="Email (optional)" />
+          <input type="text" placeholder="Destination" required />
+          <input
+            placeholder="Date of Travel"
+            class="textbox-n"
+            type="text"
+            onfocus="(this.type='date')"
+            onblur="(this.type='text')"
+            id="date"
+          />
+          <!-- <input type="date" placeholder="Date of Travel" required> -->
+          <input
+            type="number"
+            placeholder="Number of People"
+            min="1"
+            required
+          />
+          <button type="submit" class="submit-button">Send Enquiry</button>
+        </form>
+      </div>
+    </div>
+
+    <h1 id="essential-info-title">Essential Information</h1>
+
+    <div class="essential-info-container">
+      <!-- visa -->
+      <div class="info-item">
+        <img
+          src="https://img.icons8.com/ios/50/passport.png"
+          alt="Visa"
+          class="info-logo"
+        />
+
+        <div class="info-text">
+          <h4>Visa</h4>
+          <p>eVisa</p>
+        </div>
+      </div>
+
+      <!-- <div class="divider"></div> -->
+
+      <!-- currency -->
+      <div class="info-item">
+        <img
+          src="https://img.icons8.com/external-vitaliy-gorbachev-lineal-vitaly-gorbachev/60/external-singapore-dollar-currency-vitaliy-gorbachev-lineal-vitaly-gorbachev.png"
+          alt="Currency"
+          class="info-logo"
+        />
+        <div class="info-text">
+          <h4>Currency</h4>
+          <p>Uzbekistani Som (UZS)</p>
+        </div>
+      </div>
+      <!-- <div class="divider"></div> -->
+
+      <!-- climate -->
+      <div class="info-item">
+        <img
+          src="https://img.icons8.com/ios/50/temperature--v1.png"
+          alt="Climate"
+          class="info-logo"
+        />
+        <div class="info-text">
+          <h4>Climate</h4>
+          <p>Winter: -8°C to 5°C</p>
+          <p>Summer: 26°C to 36°C</p>
+        </div>
+      </div>
+      <!-- <div class="divider"></div> -->
+
+      <!-- language -->
+      <div class="info-item">
+        <img
+          src="https://img.icons8.com/ios/50/language.png"
+          alt="Languages"
+          class="info-logo"
+        />
+        <div class="info-text">
+          <h4>Languages</h4>
+          <p>Uzbek (official), Russian, Tajik</p>
+        </div>
+      </div>
+      <!-- <div class="divider"></div> -->
+
+      <!-- visitors -->
+      <div class="info-item">
+        <img
+          src="https://img.icons8.com/ios/50/groups.png"
+          alt="Visitors"
+          class="info-logo"
+        />
+
+        <div class="info-text">
+          <h4>Indian Visitors</h4>
+          <p>About 50,000 per year</p>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Company Information -->
+        <div class="footer-section company-info">
+          <img src="/assets/files/logo2.png" alt="" />
+          <p>First Floor, Vaigarai block, St, Paul's complex,</p>
+          <p>99/1, near Head post office signal,Sangillyandapuram,</p>
+          <p>Tiruchirappalli, Tamil Nadu 620001</p>
+          <p>
+            Email:
+            <a href="mailto:dhatchtnt@gmail.com" style="color: blue">
+              dhatchtnt@gmail.com</a
+            ><br />
+          </p>
+          <p>
+            Phone:
+            <a href="tel:+918925923750" style="color: blue">+91 89259 23750</a
+            ><br />
+            <a href="tel:+918925923751" style="color: blue"> +91 89259 23751</a
+            ><br />
+            <a href="tel:+917373773443" style="color: blue"> +91 73737 73443</a>
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-section quick-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="/about.html">About Us</a></li>
+            <li><a href="/services.html">Services</a></li>
+            <li><a href="/packages.html">Holiday Packages</a></li>
+            <li><a href="/contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="footer-section social-media">
+          <h3>Follow Us</h3>
+          <a
+            href="https://www.facebook.com/people/Dhatch-Tours-Travels/61566988809950/"
+            target="_blank"
+            ><img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/800px-2021_Facebook_icon.svg.png"
+              alt="Facebook"
+          /></a>
+          <a href="https://www.instagram.com/dhatch_travels" target="_blank"
+            ><img
+              src="https://img.icons8.com/fluency/48/instagram-new.png"
+              alt="Instagram"
+          /></a>
+          <a href="https://www.threads.net/@dhatch_travels" target="_blank"
+            ><img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Threads_%28app%29_logo.svg/2048px-Threads_%28app%29_logo.svg.png"
+              alt="Threads"
+          /></a>
+          <a href="https://wa.me/8925923750" target="_blank"
+            ><img
+              src="https://png.pngtree.com/png-vector/20221018/ourmid/pngtree-whatsapp-mobile-software-icon-png-image_6315991.png"
+              alt="WhatsApp"
+          /></a>
+        </div>
+
+        <!-- Newsletter Subscription -->
+        <div class="footer-section newsletter">
+          <h3>Newsletter</h3>
+          <form action="#">
+            <input type="email" placeholder="Your email address" required />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="footer-bottom">
+        <p>
+          &copy; 2024 Dhatch Tours & Travels | Designed by
+          <a href="https://arknishinvent.com/" target="_blank"
+            >ArkNish Invent</a
+          >
+        </p>
+      </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/8925923750" class="whatsapp-button" target="_blank">
+      <img
+        src="https://png.pngtree.com/png-vector/20221018/ourmid/pngtree-whatsapp-mobile-software-icon-png-image_6315991.png"
+        alt="WhatsApp"
+      />
+    </a>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="../assets/scripts/package_info_page.js"></script>
+    <script src="../assets/scripts/head_foot.js"></script>
+  </body>
+</html>
