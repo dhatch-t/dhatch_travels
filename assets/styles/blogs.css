@@ -87,6 +87,7 @@ h1{
 /* Card details styling */
 .card-details {
     padding: 15px;
+    align-items: center;
 }
 
 .card-details h3 {
