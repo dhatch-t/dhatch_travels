@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1FQVME2N3T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1FQVME2N3T');
+</script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Port Blair, Havelock, and Neil Island</title>
@@ -13,7 +22,7 @@
     <header class="header">
         <nav class="nav container">
            <div class="nav__data">
-              <a href=".\" class="nav__logo">
+              <a href="..\" class="nav__logo">
                <img src="/assets/files/logo.png" alt="Dhatch Logo">
            </a>
               
@@ -26,7 +35,7 @@
            <!-- NAV MENU -->
            <div class="nav__menu" id="nav-menu">
               <ul class="nav__list">
-                 <li><a href=".\" class="nav__link">Home</a></li>
+                 <li><a href="..\" class="nav__link">Home</a></li>
 
 
                  <!--=============== DROPDOWN 1 ===============-->
@@ -37,17 +46,17 @@
 
                     <ul class="dropdown__menu">
                        <li>
-                           <a href="/services.html#holiday-package" class="dropdown__link"> Holiday Package</a>                          
+                           <a href="/services#holiday-package" class="dropdown__link"> Holiday Package</a>                          
                         </li><li>
-                           <a href="/services.html#air-ticket-booking" class="dropdown__link"> Air Ticket Booking</a>                          
+                           <a href="/services#air-ticket-booking" class="dropdown__link"> Air Ticket Booking</a>                          
                         </li><li>
-                           <a href="/services.html#hotel-booking" class="dropdown__link"> Hotel Booking</a>                          
+                           <a href="/services#hotel-booking" class="dropdown__link"> Hotel Booking</a>                          
                         </li><li>
-                           <a href="/services.html#visa" class="dropdown__link"> Visa Services</a>                          
+                           <a href="/services#visa" class="dropdown__link"> Visa Services</a>                          
                         </li><li>
-                           <a href="/services.html#travel-insurance" class="dropdown__link"> Cab Services</a>                          
+                           <a href="/services#travel-insurance" class="dropdown__link"> Cab Services</a>                          
                         </li><li>
-                           <a href="/services.html#cab-services" class="dropdown__link"> Travel Insurance</a>                          
+                           <a href="/services#cab-services" class="dropdown__link"> Travel Insurance</a>                          
                         </li>
 
                     </ul>
@@ -61,25 +70,25 @@
 
                    <ul class="dropdown__menu">
                       <li>
-                         <a href="/packages.html#north-india" class="dropdown__link">North India</a>                          
+                         <a href="/all-packages#north-india" class="dropdown__link">North India</a>                          
                       </li>
                       <li>
-                          <a href="/packages.html#south-east-asia" class="dropdown__link">South East Asia</a>                          
+                          <a href="/south-east-asia-packages" class="dropdown__link">South East Asia</a>                          
                        </li>
-                       <li><a href="/packages.html#singapore" class="dropdown__link">Singapore</a></li>
-                       <li><a href="/packages.html#malaysia" class="dropdown__link">Malaysia</a></li>
+                       <li><a href="/all-packages#singapore" class="dropdown__link">Singapore</a></li>
+                       <li><a href="/all-packages#malaysia" class="dropdown__link">Malaysia</a></li>
 
                        <li>
-                          <a href="/packages.html#middle-east" class="dropdown__link">Middle East</a>                          
+                          <a href="/all-packages#middle-east" class="dropdown__link">Middle East</a>                          
                        </li>
-                       <li><a href="/packages.html#central-asia" class="dropdown__link">Central Asia</a></li>
-                       <li><a href="/packages.html#/europe" class="dropdown__link">Europe</a></li>
-                       <li><a href="/packages.html" class="dropdown__link">View All</a></li>
+                       <li><a href="/all-packages#central-asia" class="dropdown__link">Central Asia</a></li>
+                       <li><a href="/all-packages#/europe" class="dropdown__link">Europe</a></li>
+                       <li><a href="/all-packages" class="dropdown__link">View All</a></li>
                        </ul>
                 </li>
 
-                <li><a href="blogs.html" class="nav__link">Blog</a></li>
-                <li><a href="contact.html" class="nav__link">Contact</a></li>
+                <li><a href="/all-blogs" class="nav__link">Blog</a></li>
+                <li><a href="/contact" class="nav__link">Contact</a></li>
                </ul>
            </div>
         </nav>
@@ -108,13 +117,16 @@
                 </div>
             </div>
 
-            <form class="mobile-enquiry-form">
-                <input type="text" placeholder="Name" required>
-                <input type="tel" placeholder="Phone Number" required>
-                <input type="email" placeholder="Email (optional)">
-                <input type="text" placeholder="Destination" required>
-                <input placeholder="Date of Travel" class="textbox-n" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date" />
-                <input type="number" placeholder="Number of People" min="1" required>
+            <form class="mobile-enquiry-form" action="/submit_form.php" method="POST">
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="tel" name="phone" placeholder="Phone Number" required>
+                <input type="email" name="email" placeholder="Email (optional)">
+                <input type="text" name="destination" placeholder="Destination" required>
+                <input name="travel_date" placeholder="Date of Travel" class="textbox-n" type="text"
+                onfocus="(this.type='date'); this.min = new Date().toISOString().split('T')[0]" 
+                onblur="(this.type='text')" id="date" required> 
+                <input type="number" name="num_people" placeholder="Number of People" min="1" required>
+                <input type="hidden" name="source_page" value="Port Blair, Havelock, and Neil Island 6D/5N">
                 <button type="submit" class="submit-button">Send Enquiry</button>
             </form>
 
@@ -224,16 +236,20 @@
                 </div>
             </div>
 
-            <form class="enquiry-form">
+            <form class="enquiry-form" action="/submit_form.php" method="POST">
                 <span><strong>Book Now</strong></span>
-                <input type="text" placeholder="Name" required>
-                <input type="tel" placeholder="Phone Number" required>
-                <input type="email" placeholder="Email (optional)">
-                <input type="text" placeholder="Destination" required>
-                <input placeholder="Date of Travel" class="textbox-n" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date" />
-                <input type="number" placeholder="Number of People" min="1" required>
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="tel" name="phone" placeholder="Phone Number" required>
+                <input type="email" name="email" placeholder="Email (optional)">
+                <input type="text" name="destination" placeholder="Destination" required>
+                <input name="travel_date" placeholder="Date of Travel" class="textbox-n" type="text"
+                onfocus="(this.type='date'); this.min = new Date().toISOString().split('T')[0]" 
+                onblur="(this.type='text')" id="date" required>   
+                <input type="number" name="num_people" placeholder="Number of People" min="1" required>
+                <input type="hidden" name="source_page" value="">
                 <button type="submit" class="submit-button">Send Enquiry</button>
             </form>
+            
         </div>
     </div>
 
@@ -276,7 +292,7 @@
             <p>99/1, near Head post office signal,Sangillyandapuram, </p>
             <p> Tiruchirappalli, Tamil Nadu 620001</p>
             <p>Email:
-            <a href="mailto:dhatchtnt@gmail.com" style="color: blue;"> dhatchtnt@gmail.com</a><br>
+            <a href="mailto:info@dhatchtravels.com" style="color: blue;"> info@dhatchtravels.com</a><br>
         </p>
             <p>Phone:
             <a href="tel:+918925923750" style="color: blue;">+91 89259 23750</a><br>
@@ -290,9 +306,9 @@
             <h3>Quick Links</h3>
             <ul>
               <li><a href="/about.html">About Us</a></li>
-              <li><a href="/services.html">Services</a></li>
-              <li><a href="/packages.html">Holiday Packages</a></li>
-              <li><a href="/contact.html">Contact Us</a></li>
+              <li><a href="/services">Services</a></li>
+              <li><a href="/all-packages">Holiday Packages</a></li>
+              <li><a href="/contact">Contact Us</a></li>
             </ul>
           </div>
       

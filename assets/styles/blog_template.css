@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --body-color: hsl(0, 0%, 100%);
+}
+body {
+    font-family: 'Quicksand';
+    line-height: 1.6;
+    background-color: #fff !important;
+}
+
+
+
+.banner {
+    background: #ee3137;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    /* background-image: url("/assets/files/blur-grad.png"); */
+    /* margin: 20px 0; */
+}
+
+
+.content {
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+}
+
+.content article {
+    margin-bottom: 40px;
+}
+
+.content h2{
+    margin: 10px 0px ;
+}
+
+.content p.timestamp {
+    font-size: 0.9rem ; 
+    color: gray; 
+    font-style: italic; 
+    /* margin-bottom: 10px; */
+    display: block; 
+    text-indent: 0px;
+}
+
+.content a{
+    text-decoration: underline;
+    color: #ed3237;
+}
+.content a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+.content h3{
+    margin: 10px 0px ;
+}
+
+
+.content p{
+    font-size: 1.1rem;
+    text-indent: 30px;
+    margin-bottom: 5px;
+    /* line-height: 1.6; */
+}
+
+.content ul {
+    margin: 20px 0;
+    padding-left: 40px; /* Adds space between list items and the edge */
+    list-style-type: disc; /* Displays a bullet point for each list item */
+}
+
+.content ul li {
+    font-size: 1rem; /* Sets the font size */
+    line-height: 1.6; /* Improves readability with proper spacing */
+    margin-bottom: 8px; /* Adds space between each list item */
+}
+
+.red{
+    color: #ed3237;
+}
+
+.blog-image {
+    max-width: 90%;
+    height: auto;
+    margin: 20px auto;
+    display: block; /* Makes the image a block element */
+
+    border-radius: 8px; /* Optional: gives a slight rounding to images */
+}
+
+
+.contact-button-container {
+    text-align: center; /* Centers the button horizontally */
+    margin-bottom: 30px;
+}
+
+.contact-button {
+    display: inline-block; /* Ensures proper button-like appearance */
+    padding: 10px 20px; /* Adjusts size of the button */
+    font-size: 1.1rem; /* Sets a readable font size */
+    color: white; /* Sets text color */
+    background-color: #ed3237; /* Matches your brand's red color */
+    border: none; /* Removes default button borders */
+    border-radius: 5px; /* Rounds the button corners */
+    text-decoration: none; /* Removes underline from link */
+    font-weight: bold; /* Makes the text bold */
+    transition: background-color 0.3s ease; /* Adds a hover effect */
+}
+
+.contact-button:hover {
+    background-color: #c21d22; /* Slightly darker shade on hover */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .content {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .banner {
+        font-size: 1.5em;
+    }
+}
