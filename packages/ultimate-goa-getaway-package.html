@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Ultimate Goa Getaway</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="stylesheet" href="../assets/styles/package_info_page.css" />
+    <link rel="stylesheet" href="../assets/styles/head_foot.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="nav container">
+        <div class="nav__data">
+          <a href="..\" class="nav__logo">
+            <img src="/assets/files/logo.png" alt="Dhatch Logo" />
+          </a>
+
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line nav__burger"></i>
+            <i class="ri-close-line nav__close"></i>
+          </div>
+        </div>
+
+        <!-- NAV MENU -->
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li><a href="..\" class="nav__link">Home</a></li>
+
+            <!--=============== DROPDOWN 1 ===============-->
+            <li class="dropdown__item">
+              <div class="nav__link">
+                Services<i class="ri-arrow-down-s-line dropdown__arrow"></i>
+              </div>
+
+              <ul class="dropdown__menu">
+                <li>
+                  <a href="/services#holiday-package" class="dropdown__link">
+                    Holiday Package</a
+                  >
+                </li>
+                <li>
+                  <a href="/services#air-ticket-booking" class="dropdown__link">
+                    Air Ticket Booking</a
+                  >
+                </li>
+                <li>
+                  <a href="/services#hotel-booking" class="dropdown__link">
+                    Hotel Booking</a
+                  >
+                </li>
+                <li>
+                  <a href="/services#visa" class="dropdown__link">
+                    Visa Services</a
+                  >
+                </li>
+                <li>
+                  <a href="/services#travel-insurance" class="dropdown__link">
+                    Cab Services</a
+                  >
+                </li>
+                <li>
+                  <a href="/services#cab-services" class="dropdown__link">
+                    Travel Insurance</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="dropdown__item">
+              <div class="nav__link">
+                Packages <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+              </div>
+
+              <ul class="dropdown__menu">
+                <li>
+                  <a href="/all-packages#north-india" class="dropdown__link"
+                    >North India</a
+                  >
+                </li>
+                <li>
+                  <a href="/south-east-asia-packages" class="dropdown__link"
+                    >South East Asia</a
+                  >
+                </li>
+                <li>
+                  <a href="/all-packages#singapore" class="dropdown__link"
+                    >Singapore</a
+                  >
+                </li>
+                <li>
+                  <a href="/all-packages#malaysia" class="dropdown__link"
+                    >Malaysia</a
+                  >
+                </li>
+
+                <li>
+                  <a href="/all-packages#middle-east" class="dropdown__link"
+                    >Middle East</a
+                  >
+                </li>
+                <li>
+                  <a href="/all-packages#central-asia" class="dropdown__link"
+                    >Central Asia</a
+                  >
+                </li>
+                <li>
+                  <a href="/all-packages#/europe" class="dropdown__link"
+                    >Europe</a
+                  >
+                </li>
+                <li>
+                  <a href="/all-packages" class="dropdown__link">View All</a>
+                </li>
+              </ul>
+            </li>
+
+            <li><a href="/all-blogs" class="nav__link">Blog</a></li>
+            <li><a href="/contact" class="nav__link">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div class="full-container">
+      <!-- Left Section -->
+      <div class="left-section">
+        <div class="package-slider">
+          <div class="slide">
+            <img
+              src="/assets/files/slides/ultimate-goa-1.jpg"
+              alt="The Ultimate Goa Getaway - 1"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="/assets/files/slides/ultimate-goa-2.jpg"
+              alt="The Ultimate Goa Getaway - 1"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="/assets/files/slides/ultimate-goa-3.jpg"
+              alt="The Ultimate Goa Getaway - 1"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="/assets/files/slides/ultimate-goa-4.jpg"
+              alt="The Ultimate Goa Getaway - 1"
+            />
+          </div>
+        </div>
+
+        <div class="mobile-details-container">
+          <h2>The Ultimate Goa Getaway</h2>
+          <div class="package-info">
+            <span class="duration">4 Days 3 Nights</span>
+          </div>
+        </div>
+
+        <form
+          class="mobile-enquiry-form"
+          action="/submit_form.php"
+          method="POST"
+        >
+          <input type="text" name="name" placeholder="Name" required />
+          <input type="tel" name="phone" placeholder="Phone Number" required />
+          <input type="email" name="email" placeholder="Email (optional)" />
+          <input
+            type="text"
+            name="destination"
+            placeholder="Destination"
+            required
+          />
+          <input
+            name="travel_date"
+            placeholder="Date of Travel"
+            class="textbox-n"
+            type="text"
+            onfocus="(this.type='date'); this.min = new Date().toISOString().split('T')[0]"
+            onblur="(this.type='text')"
+            id="date"
+            required
+          />
+          <input
+            type="number"
+            name="num_people"
+            placeholder="Number of People"
+            min="1"
+            required
+          />
+          <input
+            type="hidden"
+            name="source_page"
+            value="Abudhabi Package 6D/5N "
+          />
+          <button type="submit" class="submit-button">Send Enquiry</button>
+        </form>
+
+        <div class="itinerary-container">
+          <h3>Details</h3>
+          <ul>
+            <li>
+              Relax on the pristine beaches of Goa, including Baga Beach, Anjuna
+              Beach, and Calangute Beach.
+            </li>
+            <li>
+              Enjoy a guided sightseeing tour, visiting attractions like the
+              Basilica of Bom Jesus and Se Cathedral.
+            </li>
+            <li>
+              Experience the vibrant nightlife of Goa with visits to local bars
+              and beach shacks.
+            </li>
+            <li>
+              Explore the colorful markets for souvenirs, local crafts, and
+              spices.
+            </li>
+            <li>
+              Indulge in water sports activities like parasailing, jet-skiing,
+              and windsurfing at the beaches.
+            </li>
+          </ul>
+
+          <!-- 
+                <h3>Itinerary</h3>
+                <div class="itinerary-item" onclick="toggleContent(this)">
+                    <h4>Day 1: Wagah Border Experience <span class="toggle-icon">&#129170</span></h4>
+                    <div class="itinerary-content">
+                        <ul>
+                            <li>Arrive in Amritsar and transfer to your hotel.</li>
+                            <li>Take some time to relax after check-in.</li>
+                            <li>Visit the Wagah Border to witness the patriotic Beating Retreat Ceremony with military
+                                parades and flag-lowering rituals.</li>
+                            <li>Return to the hotel for an overnight stay.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="itinerary-item" onclick="toggleContent(this)">
+                    <h4>Day 2: Explore Amritsar & Journey to Dalhousie <span class="toggle-icon">&#129170</span></h4>
+                    <div class="itinerary-content">
+                        <ul>
+                            <li>Check out from the hotel and begin an Amritsar city tour.</li>
+                            <li>Visit the Golden Temple, admired for its shimmering beauty and serene ambiance.</li>
+                            <li>Explore the Durgiana Temple, a renowned religious site with exquisite architecture.</li>
+                            <li>Pay homage at Jallianwala Bagh, a historical landmark commemorating the tragic 1919
+                                massacre.</li>
+                            <li>Continue your journey to Dalhousie and check in at the hotel for an overnight stay.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="itinerary-item" onclick="toggleContent(this)">
+                    <h4>Day 3: Day Trip to Khajjiar <span class="toggle-icon">&#129170</span></h4>
+                    <div class="itinerary-content">
+                        <ul>
+                            <li>Depart for a scenic excursion to Khajjiar, often referred to as "India's Mini
+                                Switzerland."</li>
+                            <li>Pause at Kalatop to admire stunning valley views.</li>
+                            <li>Visit the Kalatop Wildlife Sanctuary, home to diverse plant and animal species.</li>
+                            <li>In Khajjiar, see the picturesque Khajjiar Lake and visit the peaceful Khajji Nag Temple.
+                            </li>
+                            <li>Return to your Dalhousie hotel for an overnight stay.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="itinerary-item" onclick="toggleContent(this)">
+                    <h4>Day 4: Transfer to Dharamshala & Sightseeing <span class="toggle-icon">&#129170</span></h4>
+                    <div class="itinerary-content">
+                        <ul>
+                            <li>Check out and proceed to Dharamshala.</li>
+                            <li>Check in at the hotel and unwind.</li>
+                            <li>Visit the Dharamshala Cricket Stadium, set amidst the breathtaking Himalayas.</li>
+                            <li>Explore the Dharamshala War Memorial, honoring the sacrifices of Indian soldiers.</li>
+                            <li>Return to the hotel for an overnight stay.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="itinerary-item" onclick="toggleContent(this)">
+                    <h4>Day 5: Explore McLeod Ganj <span class="toggle-icon">&#129170</span></h4>
+                    <div class="itinerary-content">
+                        <ul>
+                            <li>Head out for a day trip to McLeod Ganj.</li>
+                            <li>Take in the panoramic views of the Dhauladhar Range from Naddi Village.</li>
+                            <li>Discover St. John in the Wilderness Church, a serene Gothic-style structure surrounded
+                                by greenery.</li>
+                            <li>Visit the Bhagsunath Temple and explore the Tibetan Monastery, adorned with vibrant
+                                prayer flags and sacred scriptures.</li>
+                            <li>Return to your hotel in Dharamshala for an overnight stay.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="itinerary-item" onclick="toggleContent(this)">
+                    <h4>Day 6: Return to Amritsar & Departure<span class="toggle-icon">&#129170</span></h4>
+                    <div class="itinerary-content">
+                        <ul>
+                            <li>Check out from the hotel and drive back to Amritsar.</li>
+                            <li>Conclude your journey with a transfer to the airport for your onward travel.</li>
+                        </ul>
+                    </div>
+                </div> -->
+        </div>
+      </div>
+
+      <!-- Right Section -->
+      <div class="right-section">
+        <div class="details-container">
+          <h2>The Ultimate Goa Getaway</h2>
+          <div class="package-info">
+            <span class="duration">4 Days 3 Nights</span>
+          </div>
+        </div>
+
+        <form class="enquiry-form" action="/submit_form.php" method="POST">
+          <span><strong>Book Now</strong></span>
+          <input type="text" name="name" placeholder="Name" required />
+          <input type="tel" name="phone" placeholder="Phone Number" required />
+          <input type="email" name="email" placeholder="Email (optional)" />
+          <input
+            type="text"
+            name="destination"
+            placeholder="Destination"
+            required
+          />
+          <input
+            name="travel_date"
+            placeholder="Date of Travel"
+            class="textbox-n"
+            type="text"
+            onfocus="(this.type='date'); this.min = new Date().toISOString().split('T')[0]"
+            onblur="(this.type='text')"
+            id="date"
+            required
+          />
+          <input
+            type="number"
+            name="num_people"
+            placeholder="Number of People"
+            min="1"
+            required
+          />
+          <input
+            type="hidden"
+            name="source_page"
+            value="Abudhabi Package 6D/5N"
+          />
+          <button type="submit" class="submit-button">Send Enquiry</button>
+        </form>
+      </div>
+    </div>
+
+    <h1 id="essential-info-title">Essential Information</h1>
+
+    <div class="essential-info-container">
+      <div class="info-item">
+        <img src="https://img.icons8.com/ios/50/null/passport.png" alt="visa" />
+        <h4>Visa</h4>
+        <p>Standard visa</p>
+      </div>
+      <div class="info-item">
+        <img
+          src="https://img.icons8.com/ios/50/null/coins.png"
+          alt="currency"
+        />
+        <h4>Currency</h4>
+        <p>Indian Rupee</p>
+      </div>
+      <div class="info-item">
+        <img src="https://img.icons8.com/ios/50/null/sun.png" alt="climate" />
+        <h4>Climate</h4>
+        <p>Winter: 20-30°C</p>
+        <p>Summer: 25-35°C</p>
+      </div>
+      <div class="info-item">
+        <img
+          src="https://img.icons8.com/ios/50/null/language.png"
+          alt="languages"
+        />
+        <h4>Languages</h4>
+        <p>Hindi, Marathi, Konkani, English</p>
+      </div>
+      <div class="info-item">
+        <img
+          src="https://img.icons8.com/ios/50/null/groups.png"
+          alt="visitors"
+        />
+        <h4>Indian Visitors</h4>
+        <p>Approximately 4 million per year</p>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Company Information -->
+        <div class="footer-section company-info">
+          <img src="/assets/files/logo2.png" alt="" />
+          <p>First Floor, Vaigarai block, St, Paul's complex,</p>
+          <p>99/1, near Head post office signal,Sangillyandapuram,</p>
+          <p>Tiruchirappalli, Tamil Nadu 620001</p>
+          <p>
+            Email:
+            <a href="mailto:info@dhatchtravels.com" style="color: blue">
+              info@dhatchtravels.com</a
+            ><br />
+          </p>
+          <p>
+            Phone:
+            <a href="tel:+918925923750" style="color: blue">+91 89259 23750</a
+            ><br />
+            <a href="tel:+918925923751" style="color: blue"> +91 89259 23751</a
+            ><br />
+            <a href="tel:+917373773443" style="color: blue"> +91 73737 73443</a>
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-section quick-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="/about.html">About Us</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/all-packages">Holiday Packages</a></li>
+            <li><a href="/contact">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="footer-section social-media">
+          <h3>Follow Us</h3>
+          <a
+            href="https://www.facebook.com/people/Dhatch-Tours-Travels/61566988809950/"
+            target="_blank"
+            ><img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/800px-2021_Facebook_icon.svg.png"
+              alt="Facebook"
+          /></a>
+          <a href="https://www.instagram.com/dhatch_travels" target="_blank"
+            ><img
+              src="https://img.icons8.com/fluency/48/instagram-new.png"
+              alt="Instagram"
+          /></a>
+          <a href="https://www.threads.net/@dhatch_travels" target="_blank"
+            ><img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Threads_%28app%29_logo.svg/2048px-Threads_%28app%29_logo.svg.png"
+              alt="Threads"
+          /></a>
+          <a href="https://wa.me/8925923750" target="_blank"
+            ><img
+              src="https://png.pngtree.com/png-vector/20221018/ourmid/pngtree-whatsapp-mobile-software-icon-png-image_6315991.png"
+              alt="WhatsApp"
+          /></a>
+        </div>
+
+        <!-- Newsletter Subscription -->
+        <div class="footer-section newsletter">
+          <h3>Newsletter</h3>
+          <form action="#">
+            <input type="email" placeholder="Your email address" required />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="footer-bottom">
+        <p>
+          &copy; 2024 Dhatch Tours & Travels | Designed by
+          <a href="https://arknishinvent.com/" target="_blank"
+            >ArkNish Invent</a
+          >
+        </p>
+      </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/9087767673" class="whatsapp-button" target="_blank">
+      <img
+        src="https://png.pngtree.com/png-vector/20221018/ourmid/pngtree-whatsapp-mobile-software-icon-png-image_6315991.png"
+        alt="WhatsApp"
+      />
+    </a>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="../assets/scripts/package_info_page.js"></script>
+    <script src="../assets/scripts/head_foot.js"></script>
+  </body>
+</html>
