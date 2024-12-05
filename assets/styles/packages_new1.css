@@ -61,10 +61,15 @@ header{
 } */
 
 
+.new-details-wrapper{
+    width: calc(50% + 40px);
+    /* margin-right: 50px; */
+}
+
 
 .new-card-details-container{
     background-color: white;
-    width: calc(100% + 40px);
+
     min-height: 150px;
     height: 50%;
     padding: 20px;
@@ -79,11 +84,14 @@ header{
 .new-package-features{
     position: relative;
     /* bottom: -10px; */
+    /* width: 100%; */
     top: 30px;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    
     /* margin-top: 20px; */
-    gap: 5px;
+    gap:10px;
 }
 .feature {
     background-color: #eee;
@@ -95,6 +103,19 @@ header{
     /* margin-right: 5px; */
     font-size: 0.8em;
 }
+
+.new-feature {
+    /* background-color: #ed3237; */
+    background: linear-gradient(10deg, #ece1e1, #ffd3d5); /* Gradient button */
+    padding: 10px 10px;
+    border-radius: 30px;
+    /* display: flex; */
+    align-items: center;
+    /* gap: 2px; */
+    /* margin-right: 5px; */
+    font-size: 1em;
+}
+
 
 .feature.disabled {
     opacity: 0.5;
