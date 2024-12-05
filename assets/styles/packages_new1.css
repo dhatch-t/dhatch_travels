@@ -48,6 +48,7 @@ header{
     text-decoration: none; /* Remove underline */
     color: #000;
     display: inline-block; /* Prevent it from affecting layout */
+    width: 100%;
 }
 
 .new-info{
@@ -75,7 +76,7 @@ header{
     padding: 20px;
     display: flex;
     position: relative;
-    justify-content: space-between;
+    justify-content: center;
     /* margin-right: 30px; */
     margin-left: -40px;
     border-radius: 15px;
@@ -88,10 +89,11 @@ header{
     top: 30px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    
-    /* margin-top: 20px; */
-    gap:10px;
+    justify-content: center;  /* Center the items horizontally */
+    gap: 30px;                /* Consistent gap between items */
+    padding: 0 15px;
+    /*margin-left: 30px;
+    margin-right: 30px; */
 }
 .feature {
     background-color: #eee;
@@ -130,6 +132,7 @@ header{
     position: relative;
     top:10px;
     text-decoration: none;
+    max-width: 70%;
     /* background: linear-gradient(135deg, #FF512F 0%, #DD2476 100%); */
     /* background: linear-gradient(155deg, #ed3237 0%, #ff99c2 100%); */
     background: linear-gradient(350deg, #ff5858, #ee3237); /* Gradient button */
@@ -276,6 +279,7 @@ header{
         /* width: 150px; */
         top: 0;
         margin: 0;
+        max-width: 50%;
         scale: 0.9;
     }
     .new-more-details-card{
@@ -320,12 +324,24 @@ header{
         align-items: center; /* Center align text/content */
         padding: 15px;
         margin: 0 auto;
-    }
+     }
 
+     .new-info{
+        /* justify-content: center; */
+        text-align: center;
+     }
     .new-package-features {
         flex-wrap: wrap; 
-        justify-content: center; /* Center-align features */
-        gap: 5px;
+        justify-content: center;  /* Center the items horizontally */
+    gap: 30px;                /* Consistent gap between items */
+    padding: 0 15px;
+    }
+    .new-enquiry-btn, .new-viewmore-btn {
+        /* width: 150px; */
+        top: 0;
+        margin: 0;
+        max-width: 30%;
+        scale: 0.9;
     }
 
 
