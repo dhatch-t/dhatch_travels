@@ -35,7 +35,7 @@ try {
     $stmt->execute();
 
     // Send email
-    $to = "jasonsanjay.s9a@gmail.com";
+    $to = "jasonsanjay.s9a@gmail.com, dhatchtnt@gmail.com";
     $subject = "New Form Submission from $source_page";
     $submission_date = date("Y-m-d H:i:s");
     $body = "Name: $name\nPhone: $phone\nEmail: $email\nDestination: $destination\nDate of Travel: $travel_date\n"
