@@ -48,6 +48,7 @@ header{
     text-decoration: none; /* Remove underline */
     color: #000;
     display: inline-block; /* Prevent it from affecting layout */
+    width: 100%;
 }
 
 .new-info{
@@ -61,16 +62,21 @@ header{
 } */
 
 
+.new-details-wrapper{
+    width: calc(50% + 40px);
+    /* margin-right: 50px; */
+}
+
 
 .new-card-details-container{
     background-color: white;
-    width: calc(100% + 40px);
+
     min-height: 150px;
     height: 50%;
     padding: 20px;
     display: flex;
     position: relative;
-    justify-content: space-between;
+    justify-content: center;
     /* margin-right: 30px; */
     margin-left: -40px;
     border-radius: 15px;
@@ -79,11 +85,15 @@ header{
 .new-package-features{
     position: relative;
     /* bottom: -10px; */
+    /* width: 100%; */
     top: 30px;
     display: flex;
     flex-direction: row;
-    /* margin-top: 20px; */
-    gap: 5px;
+    justify-content: center;  /* Center the items horizontally */
+    gap: 30px;                /* Consistent gap between items */
+    padding: 0 15px;
+    /*margin-left: 30px;
+    margin-right: 30px; */
 }
 .feature {
     background-color: #eee;
@@ -95,6 +105,20 @@ header{
     /* margin-right: 5px; */
     font-size: 0.8em;
 }
+
+.new-feature {
+    /* background-color: #ed3237; */
+    background: linear-gradient(10deg, #ece1e1, #ffd3d5); /* Gradient button */
+    padding: 10px 10px;
+    border-radius: 30px;
+    /* display: flex; */
+    align-items: center;
+    color: #202020;
+    /* gap: 2px; */
+    /* margin-right: 5px; */
+    font-size: 1em;
+}
+
 
 .feature.disabled {
     opacity: 0.5;
@@ -108,6 +132,7 @@ header{
     position: relative;
     top:10px;
     text-decoration: none;
+    max-width: 70%;
     /* background: linear-gradient(135deg, #FF512F 0%, #DD2476 100%); */
     /* background: linear-gradient(155deg, #ed3237 0%, #ff99c2 100%); */
     background: linear-gradient(350deg, #ff5858, #ee3237); /* Gradient button */
@@ -254,6 +279,7 @@ header{
         /* width: 150px; */
         top: 0;
         margin: 0;
+        max-width: 50%;
         scale: 0.9;
     }
     .new-more-details-card{
@@ -298,14 +324,25 @@ header{
         align-items: center; /* Center align text/content */
         padding: 15px;
         margin: 0 auto;
-    }
+     }
 
+     .new-info{
+        /* justify-content: center; */
+        text-align: center;
+     }
     .new-package-features {
         flex-wrap: wrap; 
-        justify-content: center; /* Center-align features */
-        gap: 5px;
+        justify-content: center;  /* Center the items horizontally */
+    gap: 30px;                /* Consistent gap between items */
+    padding: 0 15px;
+    }
+    .new-enquiry-btn, .new-viewmore-btn {
+        /* width: 150px; */
+        top: 0;
+        margin: 0;
+        max-width: 30%;
+        scale: 0.9;
     }
 
 
 }
-
