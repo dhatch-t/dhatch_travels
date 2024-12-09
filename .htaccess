@@ -1,4 +1,11 @@
 RewriteEngine On
+
+# Force HTTPS and redirect www to non-www
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} ^www\.dhatchtravels\.com [NC]
+RewriteRule ^(.*)$ https://dhatchtravels.com/$1 [L,R=301]
+
+# Rewrite clean URLs to .html
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^([a-zA-Z0-9_-]+)$ $1.html [NC,L]
