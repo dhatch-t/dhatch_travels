@@ -33,8 +33,292 @@ h1{
     color: #ed3237;
     font-size: 2rem;
     margin: 10px auto;
-    /* margin-left: 15px; */    
+    /* margin-left: 15px; */
     font-weight: 700;
     text-align: center;
 }
     
+.text-container{
+    max-width: 85%;
+    margin: auto;
+}
+p{
+    margin: 20px;
+    font-size: 18px;
+    
+}
+
+/* Map container styling */
+.map-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+
+/* Map iframe styling */
+.map-loc {
+    width: 50%;
+    min-height: 450px;
+    border: 0;
+    border-radius: 8px;
+}
+
+/* Details section styling */
+.map-details {
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    /* max-width: 600px; */
+}
+
+/* Header styling */
+.map-details h3 {
+    color: #ed3237;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Paragraph styling */
+.map-details p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Contact info container */
+.map-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Each contact row */
+.contact-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Icon styling */
+.contact-row img {
+    width: 24px;
+    height: 24px;
+}
+
+/* .contact-row.phone{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+} */
+
+/* .ph-numbers{
+    display: flex;
+    flex-direction: column;
+} */
+
+/* Link styling */
+.contact-row a {
+    color: #ed3237;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.contact-row a:hover {
+    text-decoration: underline;
+}
+
+/* Location text styling */
+.contact-row p {
+    font-size: 1rem;
+    color: #555;
+    margin: 0;
+}
+
+
+/* form */
+.form-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    /* max-height: 650px; */
+    padding: 40px;
+    border-radius: 0; /* No border-radius for fullscreen */
+    overflow: hidden;
+}
+
+.background-shapes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Behind the content */
+    background: linear-gradient(to right, #ed3237, #ffe5dd);
+    /* background: linear-gradient(to right, #ffd06c, #fff4f0); */
+}
+
+.background-shapes::before {
+    content: "";
+    position: absolute;
+    top: 20%;
+    left: -10%;
+    width: 120%;
+    height: 120%;
+    background-color: #ffffff15;
+    border-radius: 50%;
+    z-index: 1;
+    transform: rotate(25deg);
+}
+
+.background-shapes::after {
+    content: "";
+    position: absolute;
+    bottom: -20%;
+    right: -15%;
+    width: 80%;
+    height: 80%;
+    background-color: #ffffff1f;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.form-content {
+    width: 50%;
+    padding: 20px;
+    color: white;
+    z-index: 2; /* In front of the shapes */
+    margin: auto;
+}
+
+.form-content h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.form-content p {
+    margin-bottom: 20px;
+}
+
+.form-wrapper {
+    width: 45%;
+    background-color: #fff2ed;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+form {
+    width: 100%; /* Ensures form stays within wrapper */
+    max-width: 400px; /* Prevents it from growing too large on wider screens */
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    font-size: 1rem;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+/* .checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}
+
+.checkbox input {
+    margin-right: 10px;
+    align-items: center;
+    justify-content: center;
+} */
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}
+
+.checkbox input {
+    margin-right: 5px; /* Smaller space between the checkbox and text */
+    width: 18px; /* Ensure the checkbox has a defined width */
+    height: 18px; /* Ensure the checkbox has a defined height */
+    margin-top: 8px ;
+}
+
+.checkbox a {
+    margin-left: 5px; /* Add space before the "privacy policy" link */
+    color: #0066ff;
+    text-decoration: none;
+}
+
+.checkbox a:hover {
+    text-decoration: underline;
+}
+
+
+.form-wrapper button {
+    background-color: #fd474d;
+    color: white;
+    border: none;
+    padding: 15px;
+    margin: 5px auto;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-wrapper button:hover {
+    background-color: #004db3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .form-container {
+        flex-direction: column; /* Stack the form on smaller screens */
+        height: auto; /* Adapt height to content */
+    }
+
+    .form-content, .form-wrapper {
+        width: 100%;
+    }
+
+    .map-container{
+        flex-direction: column;
+    }
+    .map-loc{
+        width: 90%;
+    }
+    .map-details{
+        width: 90%;
+    }
+}
