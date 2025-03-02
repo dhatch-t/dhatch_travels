@@ -47,116 +47,94 @@ const serviceDetails = {
 
 document.querySelectorAll(".service-card").forEach((card) => {
   card.addEventListener("click", function (event) {
-    event.preventDefault(); // Prevent default jump behavior
-
     const serviceType = this.getAttribute("data-service");
-    const targetId = serviceDetails[serviceType].link.split("#")[1];
-    const targetElement = document.getElementById(targetId);
+    const modal = document.getElementById("service-modal");
+    const modalContent = document.querySelector(".modal-content");
+    const modalTitle = document.getElementById("modal-title");
+    const modalDescription = document.getElementById("modal-description");
+    const modalIcon = document.getElementById("modal-icon");
+    const serviceLink = document.getElementById("service-link");
 
-    if (targetElement) {
-      const offset = 50; // Adjust this value based on your header height
-      const elementPosition =
-        targetElement.getBoundingClientRect().top + window.scrollY - offset;
+    modal.style.display = "flex";
 
-      window.scrollTo({
-        top: elementPosition,
-        behavior: "smooth", // Enables smooth scrolling
-      });
-    }
+    // Prevent page scroll when modal is open
+    document.body.style.overflow = "hidden";
+
+    // Set modal content
+    modalTitle.textContent = serviceDetails[serviceType].title;
+    modalDescription.textContent = serviceDetails[serviceType].description;
+    modalIcon.innerHTML = `<img src="${serviceDetails[serviceType].icon}" alt="${serviceDetails[serviceType].title}" style="width: 80px; height: 80px; margin-bottom: 10px;">`;
+
+    serviceLink.setAttribute("href", serviceDetails[serviceType].link);
+    serviceLink.textContent = serviceDetails[serviceType].text;
+
+    // Store the service type on the modal content for reverse animation
+    modalContent.setAttribute("data-service", serviceType);
+
+    // Get the clicked card's position and dimensions
+    const cardRect = this.getBoundingClientRect();
+    const windowWidth = window.innerWidth;
+    const windowHeight = window.innerHeight;
+
+    // Apply initial position to modal content (where the clicked card is)
+    modalContent.style.width = `${cardRect.width}px`;
+    modalContent.style.height = `${cardRect.height}px`;
+    modalContent.style.left = `${cardRect.left}px`;
+    modalContent.style.top = `${cardRect.top}px`;
+    modal.style.display = "flex";
+
+    // Trigger the animation after a brief delay
+    // setTimeout(() => {
+    //     const finalWidth = 300; // Set the final width of the modal
+    //     const finalHeight = 300; // Set the final height of the modal
+    //     const windowWidth = window.innerWidth; // Get the viewport width
+    //     const windowHeight = window.innerHeight; // Get the viewport height
+    //     const finalX = (windowWidth - finalWidth) / 2;
+    //     const finalY = (windowHeight - finalHeight) / 2;
+    //     modalContent.style.transition = 'all 0.4s ease';
+
+    //     modalContent.style.width = `${finalWidth}px`;
+    //     modalContent.style.height = `${finalHeight}px`;
+    //     modalContent.style.left = `${finalX}px`;
+    //     modalContent.style.top = `${finalY}px`;
+    // }, 10);
+
+    // updated for small screen
+
+    setTimeout(() => {
+      const windowWidth = window.innerWidth;
+      const windowHeight = window.innerHeight;
+
+      let finalWidth, finalHeight;
+
+      // Adjust modal size based on screen width
+      if (windowWidth <= 768) {
+        finalWidth = windowWidth * 0.8; // 80% width for medium screens
+        finalHeight = "auto"; // Let the height adjust automatically
+      } else if (windowWidth <= 480) {
+        finalWidth = windowWidth * 0.9; // 90% width for smaller screens
+        finalHeight = "auto"; // Let the height adjust automatically
+      } else {
+        finalWidth = 200; // Default for larger screens
+        finalHeight = 250;
+      }
+
+      const finalX = (windowWidth - finalWidth) / 2;
+      const finalY = (windowHeight - finalHeight) / 2;
+
+      modalContent.style.transition = "all 0.4s ease";
+
+      // Set the final dimensions and position
+      modalContent.style.width = `${finalWidth}px`;
+      modalContent.style.height =
+        finalHeight !== "auto" ? `${finalHeight}px` : "auto";
+      modalContent.style.left = `${finalX}px`;
+      modalContent.style.top = `${finalY}px`;
+    }, 10);
   });
 });
 
-// document.querySelectorAll(".service-card").forEach((card) => {
-//   card.addEventListener("click", function (event) {
-//     const serviceType = this.getAttribute("data-service");
-//     const modal = document.getElementById("service-modal");
-//     const modalContent = document.querySelector(".modal-content");
-//     const modalTitle = document.getElementById("modal-title");
-//     const modalDescription = document.getElementById("modal-description");
-//     const modalIcon = document.getElementById("modal-icon");
-//     const serviceLink = document.getElementById("service-link");
-
-//     modal.style.display = "flex";
-
-//     // Prevent page scroll when modal is open
-//     document.body.style.overflow = "hidden";
-
-//     // Set modal content
-//     modalTitle.textContent = serviceDetails[serviceType].title;
-//     modalDescription.textContent = serviceDetails[serviceType].description;
-//     modalIcon.innerHTML = `<img src="${serviceDetails[serviceType].icon}" alt="${serviceDetails[serviceType].title}" style="width: 80px; height: 80px; margin-bottom: 10px;">`;
-
-//     serviceLink.setAttribute("href", serviceDetails[serviceType].link);
-//     serviceLink.textContent = serviceDetails[serviceType].text;
-
-//     // Store the service type on the modal content for reverse animation
-//     modalContent.setAttribute("data-service", serviceType);
-
-//     // Get the clicked card's position and dimensions
-//     const cardRect = this.getBoundingClientRect();
-//     const windowWidth = window.innerWidth;
-//     const windowHeight = window.innerHeight;
-
-//     // Apply initial position to modal content (where the clicked card is)
-//     modalContent.style.width = `${cardRect.width}px`;
-//     modalContent.style.height = `${cardRect.height}px`;
-//     modalContent.style.left = `${cardRect.left}px`;
-//     modalContent.style.top = `${cardRect.top}px`;
-//     modal.style.display = "flex";
-
-//     // Trigger the animation after a brief delay
-//     // setTimeout(() => {
-//     //     const finalWidth = 300; // Set the final width of the modal
-//     //     const finalHeight = 300; // Set the final height of the modal
-//     //     const windowWidth = window.innerWidth; // Get the viewport width
-//     //     const windowHeight = window.innerHeight; // Get the viewport height
-//     //     const finalX = (windowWidth - finalWidth) / 2;
-//     //     const finalY = (windowHeight - finalHeight) / 2;
-//     //     modalContent.style.transition = 'all 0.4s ease';
-
-//     //     modalContent.style.width = `${finalWidth}px`;
-//     //     modalContent.style.height = `${finalHeight}px`;
-//     //     modalContent.style.left = `${finalX}px`;
-//     //     modalContent.style.top = `${finalY}px`;
-//     // }, 10);
-
-//     // updated for small screen
-
-//     setTimeout(() => {
-//       const windowWidth = window.innerWidth;
-//       const windowHeight = window.innerHeight;
-
-//       let finalWidth, finalHeight;
-
-//       // Adjust modal size based on screen width
-//       if (windowWidth <= 768) {
-//         finalWidth = windowWidth * 0.8; // 80% width for medium screens
-//         finalHeight = "auto"; // Let the height adjust automatically
-//       } else if (windowWidth <= 480) {
-//         finalWidth = windowWidth * 0.9; // 90% width for smaller screens
-//         finalHeight = "auto"; // Let the height adjust automatically
-//       } else {
-//         finalWidth = 200; // Default for larger screens
-//         finalHeight = 250;
-//       }
-
-//       const finalX = (windowWidth - finalWidth) / 2;
-//       const finalY = (windowHeight - finalHeight) / 2;
-
-//       modalContent.style.transition = "all 0.4s ease";
-
-//       // Set the final dimensions and position
-//       modalContent.style.width = `${finalWidth}px`;
-//       modalContent.style.height =
-//         finalHeight !== "auto" ? `${finalHeight}px` : "auto";
-//       modalContent.style.left = `${finalX}px`;
-//       modalContent.style.top = `${finalY}px`;
-//     }, 10);
-//   });
-// });
-
 // Function to close the modal with reverse animation
-
 function closeModal() {
   const modal = document.getElementById("service-modal");
   const modalContent = document.querySelector(".modal-content");
