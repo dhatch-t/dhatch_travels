@@ -1,405 +1,593 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-1FQVME2N3T"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-1FQVME2N3T"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'G-1FQVME2N3T');
-</script>
-  
+      gtag("config", "G-1FQVME2N3T");
+    </script>
 
-<title>Our Services | Dhatch Tours & Travels</title>
-<meta name="description"
-    content="Discover tailored holiday packages, air ticket booking, hotel reservations, visa assistance, travel insurance, and reliable cab services. Plan your perfect trip with us!">
+    <title>Our Services | Dhatch Tours & Travels</title>
+    <meta
+      name="description"
+      content="Discover tailored holiday packages, air ticket booking, hotel reservations, visa assistance, travel insurance, and reliable cab services. Plan your perfect trip with us!"
+    />
 
-<meta charset="UTF-8">
-<meta name=”robots” content="index, follow">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-<link rel="shortcut icon" href="/favicon.ico" />
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-<meta name="apple-mobile-web-app-title" content="Services | Dhatch Tours & Travels" />
-<link rel="manifest" href="/site.webmanifest" />
+    <meta charset="UTF-8" />
+    <meta name="”robots”" content="index, follow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <meta
+      name="apple-mobile-web-app-title"
+      content="Services | Dhatch Tours & Travels"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
 
-<link rel="canonical" href="https://dhatchtravels.com/services">
-<meta property="og:title" content="Services | Dhatch Tours & Travels">
-<meta property="og:description"
-    content="Explore custom holiday packages, seamless flight and hotel bookings, visa help, travel insurance, and cab services. Dhatch Tours & Travels makes every trip effortless!">
-<meta property="og:image" content="https://dhatchtravels.com/logo.png">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://dhatchtravels.com/services">
+    <link rel="canonical" href="https://dhatchtravels.com/services" />
+    <meta property="og:title" content="Services | Dhatch Tours & Travels" />
+    <meta
+      property="og:description"
+      content="Explore custom holiday packages, seamless flight and hotel bookings, visa help, travel insurance, and cab services. Dhatch Tours & Travels makes every trip effortless!"
+    />
+    <meta property="og:image" content="https://dhatchtravels.com/logo.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://dhatchtravels.com/services" />
 
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/styles/head_foot.css" />
 
-<link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/styles/head_foot.css">
+    <style>
+      /* Basic Reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        /* background-color: ; */
+      }
 
-  <style>
-    /* Basic Reset */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      /* background-color: ; */
-    }
+      .service-scroll {
+        scroll-margin-top: 100px;
+      }
+      body {
+        background-color: #f0f5ff;
+        background-color: #fff;
+        font-family: "Quicksand";
+      }
 
-    .service-scroll {
-    scroll-margin-top: 100px; 
-}
-    body{
-      background-color: #f0f5ff ;
-      background-color: #fff;
-      font-family: 'Quicksand';
-    }
+      /* Banner */
+      .service-banner {
+        height: 300px;
+        width: 100%;
+        background-color: #4a90e2;
+        background-image: url(/assets/files/banners/service-page-banner.jpg);
+        object-fit: fill;
+        background-size: cover; /* Contain the entire image */
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Prevent repeating */
+        opacity: 0.6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 2em;
+        font-weight: bold;
+      }
 
-    /* Banner */
-    .service-banner {
-      height: 300px;
-      width: 100%;
-      background-color: #4a90e2;
-      background-image: url(/assets/files/banners/service-page-banner.jpg);
-      object-fit: fill;
-      background-size: cover; /* Contain the entire image */
-      background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Prevent repeating */
-    opacity: 0.6;
-     display: flex;
-      justify-content: center;
-      align-items: center;
-      color: white;
-      font-size: 2em;
-      font-weight: bold;
-    }
+      /* Overlapping Layover */
+      .service-banner-layover {
+        height: 100px;
+        width: 50%;
+        background-color: #ffffff;
+        margin: -50px auto 20px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.3em;
+        color: #333;
+        position: relative;
+        z-index: 1;
+        border-radius: 15px;
+      }
 
-    /* Overlapping Layover */
-    .service-banner-layover {
-      height: 100px;
-      width: 50%;
-      background-color: #ffffff;
-      margin: -50px auto 20px;
-      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 1.3em;
-      color: #333;
-      position: relative;
-      z-index: 1;
-      border-radius: 15px;
-    }
-
-    /* Cards Layout */
-    .service-cards {
+      /* Cards Layout */
+      .service-cards {
         width: 80%;
         margin: 0 auto;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-      padding: 20px;
-    }
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+      }
 
-    .service-cards a{
-      text-decoration: none;
-      text-emphasis-color: none;
-      color: inherit;
-      margin: 0;
-    }
+      .service-cards a {
+        text-decoration: none;
+        text-emphasis-color: none;
+        color: inherit;
+        margin: 0;
+      }
 
-    .service-card {
-      position: relative; /* Establish a positioning context */
-      flex: 1 1 calc(33.333% - 40px); /* 3 cards per row */
-      /* max-width: calc(33.333% - 40px); */
-      max-width: 30%;
-      margin: 15px auto;
-      background-color: #f7f7f7;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-      text-align: center;
-      transition: transform 0.2s ease;
-      /* min-height: 150px; */
-    }
+      .service-card {
+        position: relative; /* Establish a positioning context */
+        flex: 1 1 calc(33.333% - 40px); /* 3 cards per row */
+        /* max-width: calc(33.333% - 40px); */
+        max-width: 30%;
+        margin: 15px auto;
+        background-color: #f7f7f7;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: transform 0.2s ease;
+        /* min-height: 150px; */
+      }
 
+      .service-card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #ff7176;
+        z-index: -1;
+        transform: rotate(0deg);
+        border-radius: 8px;
+        transition: transform 0.3s ease;
+        display: hidden;
+        /* scale: 0; */
+      }
 
-.service-card::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #ff7176; 
-  z-index: -1; 
-  transform: rotate(0deg);
-  border-radius: 8px;
-  transition: transform 0.3s ease; 
-  display: hidden;
-  /* scale: 0; */
-}
+      .service-card:hover::before {
+        /* scale: 1; */
+        transform: rotate(8deg); /* Rotate the background on hover */
+      }
 
+      .service-card h2 {
+        color: #151515;
+        margin: 10px auto;
+        font-size: 21px;
+      }
 
-.service-card:hover::before {
-    /* scale: 1; */
-  transform: rotate(8deg); /* Rotate the background on hover */
-}
+      .service-card p {
+        font-size: 18px;
+        padding: 5px;
+        color: #3e3e3e;
+      }
 
-.service-card h2{
-    color: #151515;
-    margin: 10px auto;
-    font-size: 21px;
-}
-
-.service-card p{
-  font-size: 18px;
-  padding: 5px;
-  color: #3e3e3e;
-}
-   
-    /* Service Details Section */
-    .service-details {
+      /* Service Details Section */
+      .service-details {
         width: 70%;
         margin: 20px auto;
-      padding: 20px;
-      background-color: #ffffff;
-    }
+        padding: 20px;
+        background-color: #ffffff;
+      }
 
-    .service-details h2 {
-      font-size: 1.8em;
-      color: #ed3237;
-      margin-bottom: 10px;
-    }
+      .service-details h2 {
+        font-size: 1.8em;
+        color: #ed3237;
+        margin-bottom: 10px;
+      }
 
-    .service-details p {
-      font-size: 18px;
-      color: #555;
-      margin-bottom: 20px;
-      line-height: 1.5;
-    }
+      .service-details p {
+        font-size: 18px;
+        color: #555;
+        margin-bottom: 20px;
+        line-height: 1.5;
+      }
 
-    @media (max-width: 992px) { /* Medium screens: 2 cards per row */
-  .service-card {
-    flex: 1 1 calc(50% - 20px); /* 2 cards per row */
-    max-width: calc(50% - 20px);
-  }
-}
+      @media (max-width: 992px) {
+        /* Medium screens: 2 cards per row */
+        .service-card {
+          flex: 1 1 calc(50% - 20px); /* 2 cards per row */
+          max-width: calc(50% - 20px);
+        }
+      }
 
-@media (max-width: 600px) { /* Small screens: 1 card per row */
-  .service-card {
-    flex: 1 1 100%; /* 1 card per row */
-    max-width: 100%;
-  }
-  .service-banner-layover{
-    font-size: 15px;
-  }
-}
-
-
-  </style>
-</head>
-<body>
-
+      @media (max-width: 600px) {
+        /* Small screens: 1 card per row */
+        .service-card {
+          flex: 1 1 100%; /* 1 card per row */
+          max-width: 100%;
+        }
+        .service-banner-layover {
+          font-size: 15px;
+        }
+      }
+    </style>
+  </head>
+  <body>
     <header class="header">
-        <nav class="nav container">
-           <div class="nav__data">
-              <a href=".\" class="nav__logo">
-               <img src="/assets/files/logo.png" alt="Dhatch Logo">
-           </a>
-              
-              <div class="nav__toggle" id="nav-toggle">
-                 <i class="ri-menu-line nav__burger"></i>
-                 <i class="ri-close-line nav__close"></i>
+      <nav class="nav container">
+        <div class="nav__data">
+          <a href=".\" class="nav__logo">
+            <img src="/assets/files/logo.png" alt="Dhatch Logo" />
+          </a>
+
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line nav__burger"></i>
+            <i class="ri-close-line nav__close"></i>
+          </div>
+        </div>
+
+        <!-- NAV MENU -->
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li><a href=".\" class="nav__link">Home</a></li>
+
+            <!--=============== DROPDOWN 1 ===============-->
+            <li class="dropdown__item">
+              <div class="nav__link">
+                Services<i class="ri-arrow-down-s-line dropdown__arrow"></i>
               </div>
-           </div>
-    
-           <!-- NAV MENU -->
-           <div class="nav__menu" id="nav-menu">
-              <ul class="nav__list">
-                 <li><a href=".\" class="nav__link">Home</a></li>
-    
-    
-                 <!--=============== DROPDOWN 1 ===============-->
-                 <li class="dropdown__item">
-                    <div class="nav__link">
-                       Services<i class="ri-arrow-down-s-line dropdown__arrow"></i>
-                    </div>
-    
-                    <ul class="dropdown__menu">
-                       <li>
-                           <a href="/services#holiday-package" class="dropdown__link"> Holiday Package</a>                          
-                        </li><li>
-                           <a href="/services#air-ticket-booking" class="dropdown__link"> Air Ticket Booking</a>                          
-                        </li><li>
-                           <a href="/services#hotel-booking" class="dropdown__link"> Hotel Booking</a>                          
-                        </li><li>
-                           <a href="/services#visa" class="dropdown__link"> Visa Services</a>                          
-                        </li><li>
-                           <a href="/services#travel-insurance" class="dropdown__link"> Cab Services</a>                          
-                        </li><li>
-                           <a href="/services#cab-services" class="dropdown__link"> Travel Insurance</a>                          
-                        </li>
-    
-                    </ul>
-                 </li>
-                 
-    
-                 <li class="dropdown__item">
-                   <div class="nav__link">
-                      Packages <i class="ri-arrow-down-s-line dropdown__arrow"></i>
-                   </div>
-    
-                   <ul class="dropdown__menu">
-                      <li>
-                         <a href="/all-packages#north-india" class="dropdown__link">North India</a>                          
-                      </li>
-                      <li>
-                          <a href="/south-east-asia-packages" class="dropdown__link">South East Asia</a>                          
-                       </li>
-                       <li><a href="/singapore-malaysia-packages" class="dropdown__link">Singapore</a></li>
-                       <li><a href="/all-packages#malaysia" class="dropdown__link">Malaysia</a></li>
-    
-                       <li>
-                          <a href="/all-packages#middle-east" class="dropdown__link">Middle East</a>                          
-                       </li>
-                       <li><a href="/all-packages#central-asia" class="dropdown__link">Central Asia</a></li>
-                       <li><a href="/all-packages#/europe" class="dropdown__link">Europe</a></li>
-                       <li><a href="/all-packages" class="dropdown__link">View All</a></li>
-                       </ul>
+
+              <ul class="dropdown__menu">
+                <li>
+                  <a href="/services#holiday-package" class="dropdown__link">
+                    Holiday Package</a
+                  >
                 </li>
-    
-                <li><a href="/all-blogs" class="nav__link">Blog</a></li>
-                <li><a href="/contact" class="nav__link">Contact</a></li>
-               </ul>
-           </div>
-        </nav>
-     </header>
-    
+                <li>
+                  <a href="/services#air-ticket-booking" class="dropdown__link">
+                    Air Ticket Booking</a
+                  >
+                </li>
+                <li>
+                  <a href="/services#hotel-booking" class="dropdown__link">
+                    Hotel Booking</a
+                  >
+                </li>
+                <li>
+                  <a href="/services#visa" class="dropdown__link">
+                    Visa Services</a
+                  >
+                </li>
+                <li>
+                  <a href="/services#cab-services" class="dropdown__link">
+                    Cab Services</a
+                  >
+                </li>
+                <li>
+                  <a href="/services#travel-insurance" class="dropdown__link">
+                    Travel Insurance</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="dropdown__item">
+              <div class="nav__link">
+                Packages <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+              </div>
+
+              <ul class="dropdown__menu">
+                <li>
+                  <a href="/all-packages#north-india" class="dropdown__link"
+                    >North India</a
+                  >
+                </li>
+                <li>
+                  <a href="/south-east-asia-packages" class="dropdown__link"
+                    >South East Asia</a
+                  >
+                </li>
+                <li>
+                  <a href="/singapore-malaysia-packages" class="dropdown__link"
+                    >Singapore</a
+                  >
+                </li>
+                <li>
+                  <a href="/all-packages#malaysia" class="dropdown__link"
+                    >Malaysia</a
+                  >
+                </li>
+
+                <li>
+                  <a href="/all-packages#middle-east" class="dropdown__link"
+                    >Middle East</a
+                  >
+                </li>
+                <li>
+                  <a href="/all-packages#central-asia" class="dropdown__link"
+                    >Central Asia</a
+                  >
+                </li>
+                <li>
+                  <a href="/all-packages#/europe" class="dropdown__link"
+                    >Europe</a
+                  >
+                </li>
+                <li>
+                  <a href="/all-packages" class="dropdown__link">View All</a>
+                </li>
+              </ul>
+            </li>
+
+            <li><a href="/all-blogs" class="nav__link">Blog</a></li>
+            <li><a href="/contact" class="nav__link">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
     <!-- Banner Section -->
-  <div class="service-banner">
-    Our Services
-  </div>
+    <div class="service-banner">Our Services</div>
 
-  <!-- Overlapping Layover -->
-  <div class="service-banner-layover">
-    Discover What We Offer
-  </div>
+    <!-- Overlapping Layover -->
+    <div class="service-banner-layover">Discover What We Offer</div>
 
-  <!-- Cards Section -->
-  <div class="service-cards">
-    <div class="service-card">
+    <!-- Cards Section -->
+    <div class="service-cards">
+      <div class="service-card">
         <h2>Holiday Package</h2>
-    <p>
-        We offer a variety of holiday packages to suit every preference, from adventure travel to relaxing beach vacations.
-    </p></div>
-    <div class="service-card">
-        <h2>Air Ticket Booking</h2>
-    <p>
-        Book your air tickets with us for a seamless travel experience and exclusive discounts on selected airlines.
-    </p></div>
-    <div class="service-card">
-        <h2>Hotel Booking</h2>
-    <p>
-        We can arrange accommodations to suit any budget, from luxury hotels to budget-friendly stays.
-    </p></div>
-    <div class="service-card">
-        <h2>Visa Assistance</h2>
-    <p>
-        Our team will guide you through the visa application process and ensure all necessary documentation is in order.
-    </p></div>
-    <div class="service-card">
-        <h2>Travel Insurance</h2>
-    <p>
-        Protect yourself during your travels with comprehensive travel insurance options.
-    </p></div>
-    <div class="service-card">
-        <h2>Cab Services</h2>
-    <p>
-        We offer cab services to and from the airport, as well as city tours and intercity travel.
-    </p></div>
-    
-  </div>
-
-  <!-- Service Details Section -->
-  <div class="service-details">
-    <h2 id="holiday-package" class="service-scroll">Holiday Package</h2>
-    <p style="text-indent: 2em;">At Dhatch Tours and Travel, our curated holiday packages offer the perfect blend of adventure, relaxation, and cultural exploration for travelers of all types. Whether you’re seeking a scenic getaway in the mountains, a tropical beach escape, or a cultural city tour, we design packages that capture the best of every destination. With affordable and flexible options, our holiday packages are crafted to fit your budget and preferences, ensuring that every aspect of your trip is hassle-free and memorable. Explore the world with the assurance of a well-planned and personalized experience.</p> <p style="text-indent: 2em;">Our holiday packages cover everything from accommodation and sightseeing to local excursions, offering a complete travel experience tailored just for you. By partnering with trusted vendors and guides, we provide unique itineraries that include hidden gems and popular attractions alike. With Dhatch Tours and Travel, you don’t just see a destination—you experience it. Let us take care of the details while you focus on making unforgettable memories with family, friends, or a solo adventure.</p>
-
-    <h2 id="air-ticket-booking" class="service-scroll">Air Ticket Booking</h2>
-    <p style="text-indent: 2em;">Streamline your travel plans with Dhatch Tours and Travel’s air ticket booking service, where convenience meets cost-efficiency. Our team is dedicated to finding you the best airfare deals and routes, whether you’re booking months in advance or need a last-minute flight. With access to a broad network of airlines, we can provide options that cater to your timing, budget, and preferences, ensuring you enjoy the most seamless journey possible. Rely on us to handle any complexities of air travel while you focus on your upcoming adventure.</p> <p style="text-indent: 2em;">Our air ticket booking service goes beyond just finding flights—we’re here to offer personalized recommendations, manage rebookings or cancellations, and even help with seat selection. We understand that travel needs can vary, and we’re committed to providing tailored support throughout the process. At Dhatch Tours and Travel, our goal is to simplify your booking experience, saving you time and ensuring you get the best value every time you fly.</p>
-
-    <h2 id="hotel-booking" class="service-scroll">Hotel Booking</h2>
-    <p style="text-indent: 2em;">Enjoy comfort and convenience with Dhatch Tours and Travel’s hotel booking services, offering a wide selection of accommodations that cater to every traveler’s needs. Whether you’re looking for budget-friendly stays, luxury resorts, or unique boutique hotels, our extensive network ensures you’ll find the perfect place to rest. We handle all the details, including location, amenities, and preferences, so you can look forward to a worry-free stay at your destination. With Dhatch Tours and Travel, your accommodation is a guaranteed part of the perfect trip.</p> <p style="text-indent: 2em;">Our hotel booking service prioritizes your comfort, safety, and satisfaction. We provide personalized recommendations and exclusive deals to fit your itinerary and enhance your travel experience. From family-friendly stays to quiet retreats for solo travelers, each booking is managed with care, ensuring your stay aligns with your travel goals. Trust Dhatch Tours and Travel for a seamless hotel booking experience, where quality and comfort come together in every destination.</p>
-
-    <h2 id="visa" class="service-scroll">Visa Assistance</h2>
-    <p style="text-indent: 2em;">Dhatch Tours and Travel offers comprehensive visa assistance services, guiding you through the often complex visa application process with ease. Our team stays updated on the latest visa requirements for numerous countries, providing you with accurate information and personalized support to meet your travel needs. We handle the documentation and formalities, so you can focus on planning your journey, knowing that your visa process is in capable hands.</p> <p style="text-indent: 2em;">With our visa assistance, you’ll receive step-by-step guidance, including document preparation, application submission, and updates on the status of your visa. We aim to make the process as smooth and efficient as possible, minimizing delays and ensuring you’re well-prepared for your trip. Whether it’s for a vacation, business, or family visit, Dhatch Tours and Travel’s visa services are here to simplify your travel requirements and set you up for a stress-free start to your adventure.</p>
-
-    <h2 id="travel-insurance" class="service-scroll">Travel Insurance</h2>
-    <p style="text-indent: 2em;">Protect your journey with Dhatch Tours and Travel’s comprehensive travel insurance options, designed to give you peace of mind on every trip. We offer flexible insurance plans that cover a wide range of situations, including medical emergencies, trip cancellations, lost luggage, and more. With us, you can embark on your travels knowing you’re fully protected from unforeseen events that could impact your experience. Travel insurance is an essential part of responsible travel, and we ensure you’re covered at every step.</p> <p style="text-indent: 2em;">Our travel insurance packages are tailored to meet the unique needs of each traveler, with options suited for solo journeys, family vacations, or group adventures. Dhatch Tours and Travel partners with trusted insurance providers to bring you the best in coverage and affordability. By securing your trip with our insurance services, you can explore the world confidently, knowing that any unexpected situations are taken care of promptly and professionally.</p>
-
-    <h2 id="cab-services" class="service-scroll">Cab Services    </h2>
-    <p style="text-indent: 2em;">Dhatch Tours and Travel provides reliable and comfortable cab services to ensure you have safe and convenient transportation during your journey. Our cab options are available for airport transfers, city tours, and intercity travel, all designed to make your experience as smooth as possible. With professional drivers, clean vehicles, and timely service, you’ll enjoy a stress-free travel experience with every ride. Book a cab with Dhatch Tours and Travel and let us handle the logistics while you focus on exploring your destination.</p> <p style="text-indent: 2em;">Our cab services are tailored to offer flexibility and convenience, catering to your unique travel needs. Whether you need a private transfer or group transport, our network of drivers and vehicles provides reliable solutions for all types of trips. We prioritize safety, punctuality, and comfort, making it easier than ever to travel at your own pace. Dhatch Tours and Travel’s cab services ensure that wherever you go, you arrive with ease and peace of mind.</p>
-  </div>
-
-  <footer class="footer">
-    <div class="footer-container">
-      <!-- Company Information -->
-      <div class="footer-section company-info">
-        <img src="/assets/files/logo2.png" alt="Dhatch Logo">
-        <p>First Floor, Vaigarai block, St, Paul's complex,</p>
-        <p>99/1, near Head post office signal,Sangillyandapuram, </p>
-        <p> Tiruchirappalli, Tamil Nadu 620001</p>
-        <p>Email:
-        <a href="mailto:info@dhatchtravels.com"> info@dhatchtravels.com</a><br>
-    </p>
-        <p>Phone:
-        <a href="tel:+918925923750">+91 89259 23750</a><br>
-        <a href="tel:+918925923751" > +91 89259 23751</a><br>
-        <a href="tel:+917373773443" > +91 73737 73443</a>
+        <p>
+          We offer a variety of holiday packages to suit every preference, from
+          adventure travel to relaxing beach vacations.
         </p>
       </div>
-  
-      <!-- Quick Links -->
-      <div class="footer-section quick-links">
-        <h3>Quick Links</h3>
-        <ul>
-          <li><a href="/about.html">About Us</a></li>
-          <li><a href="/services">Services</a></li>
-          <li><a href="/all-packages">Holiday Packages</a></li>
-          <li><a href="/contact">Contact Us</a></li>
-        </ul>
+      <div class="service-card">
+        <h2>Air Ticket Booking</h2>
+        <p>
+          Book your air tickets with us for a seamless travel experience and
+          exclusive discounts on selected airlines.
+        </p>
       </div>
-  
-      <!-- Social Media Links -->
-      <div class="footer-section social-media">
-        <h3>Follow Us</h3>
-        <a href="https://www.facebook.com/people/Dhatch-Tours-Travels/61566988809950/" target="_blank" rel="noopener noreferrer"><img src="/assets/files/icons/facebook_icon.png" alt="Facebook"></a>
-        <a href="https://www.instagram.com/dhatch_travels" target="_blank" rel="noopener noreferrer"><img src="/assets/files/icons/instagram_icon.png" alt="Instagram"></a>
-        <a href="https://www.threads.net/@dhatch_travels" target="_blank" rel="noopener noreferrer"><img src="/assets/files/icons/threads_icon.webp" alt="Threads"></a>
-        <a href="https://wa.me/8925923750" target="_blank" rel="noopener noreferrer"><img src="/assets/files/icons/whatsapp_icon.png" alt="WhatsApp"></a>
+      <div class="service-card">
+        <h2>Hotel Booking</h2>
+        <p>
+          We can arrange accommodations to suit any budget, from luxury hotels
+          to budget-friendly stays.
+        </p>
       </div>
-  
-      <!-- Newsletter Subscription -->
-      <div class="footer-section newsletter">
-        <h3>Newsletter</h3>
-        <form action="#">
-          <input type="email" placeholder="Your email address" required>
-          <button type="submit">Subscribe</button>
-        </form>
+      <div class="service-card">
+        <h2>Visa Assistance</h2>
+        <p>
+          Our team will guide you through the visa application process and
+          ensure all necessary documentation is in order.
+        </p>
+      </div>
+      <div class="service-card">
+        <h2>Travel Insurance</h2>
+        <p>
+          Protect yourself during your travels with comprehensive travel
+          insurance options.
+        </p>
+      </div>
+      <div class="service-card">
+        <h2>Cab Services</h2>
+        <p>
+          We offer cab services to and from the airport, as well as city tours
+          and intercity travel.
+        </p>
       </div>
     </div>
-  
-    <!-- Copyright -->
-    <div class="footer-bottom">
-      <p>&copy; 2024 Dhatch Tours & Travels | Designed by <a href="https://arknishinvent.com/">ArkNish Invent</a></p>
+
+    <!-- Service Details Section -->
+    <div class="service-details">
+      <h2 id="holiday-package" class="service-scroll">Holiday Package</h2>
+      <p style="text-indent: 2em">
+        At Dhatch Tours and Travel, our curated holiday packages offer the
+        perfect blend of adventure, relaxation, and cultural exploration for
+        travelers of all types. Whether you’re seeking a scenic getaway in the
+        mountains, a tropical beach escape, or a cultural city tour, we design
+        packages that capture the best of every destination. With affordable and
+        flexible options, our holiday packages are crafted to fit your budget
+        and preferences, ensuring that every aspect of your trip is hassle-free
+        and memorable. Explore the world with the assurance of a well-planned
+        and personalized experience.
+      </p>
+      <p style="text-indent: 2em">
+        Our holiday packages cover everything from accommodation and sightseeing
+        to local excursions, offering a complete travel experience tailored just
+        for you. By partnering with trusted vendors and guides, we provide
+        unique itineraries that include hidden gems and popular attractions
+        alike. With Dhatch Tours and Travel, you don’t just see a
+        destination—you experience it. Let us take care of the details while you
+        focus on making unforgettable memories with family, friends, or a solo
+        adventure.
+      </p>
+
+      <h2 id="air-ticket-booking" class="service-scroll">Air Ticket Booking</h2>
+      <p style="text-indent: 2em">
+        Streamline your travel plans with Dhatch Tours and Travel’s air ticket
+        booking service, where convenience meets cost-efficiency. Our team is
+        dedicated to finding you the best airfare deals and routes, whether
+        you’re booking months in advance or need a last-minute flight. With
+        access to a broad network of airlines, we can provide options that cater
+        to your timing, budget, and preferences, ensuring you enjoy the most
+        seamless journey possible. Rely on us to handle any complexities of air
+        travel while you focus on your upcoming adventure.
+      </p>
+      <p style="text-indent: 2em">
+        Our air ticket booking service goes beyond just finding flights—we’re
+        here to offer personalized recommendations, manage rebookings or
+        cancellations, and even help with seat selection. We understand that
+        travel needs can vary, and we’re committed to providing tailored support
+        throughout the process. At Dhatch Tours and Travel, our goal is to
+        simplify your booking experience, saving you time and ensuring you get
+        the best value every time you fly.
+      </p>
+
+      <h2 id="hotel-booking" class="service-scroll">Hotel Booking</h2>
+      <p style="text-indent: 2em">
+        Enjoy comfort and convenience with Dhatch Tours and Travel’s hotel
+        booking services, offering a wide selection of accommodations that cater
+        to every traveler’s needs. Whether you’re looking for budget-friendly
+        stays, luxury resorts, or unique boutique hotels, our extensive network
+        ensures you’ll find the perfect place to rest. We handle all the
+        details, including location, amenities, and preferences, so you can look
+        forward to a worry-free stay at your destination. With Dhatch Tours and
+        Travel, your accommodation is a guaranteed part of the perfect trip.
+      </p>
+      <p style="text-indent: 2em">
+        Our hotel booking service prioritizes your comfort, safety, and
+        satisfaction. We provide personalized recommendations and exclusive
+        deals to fit your itinerary and enhance your travel experience. From
+        family-friendly stays to quiet retreats for solo travelers, each booking
+        is managed with care, ensuring your stay aligns with your travel goals.
+        Trust Dhatch Tours and Travel for a seamless hotel booking experience,
+        where quality and comfort come together in every destination.
+      </p>
+
+      <h2 id="visa" class="service-scroll">Visa Assistance</h2>
+      <p style="text-indent: 2em">
+        Dhatch Tours and Travel offers comprehensive visa assistance services,
+        guiding you through the often complex visa application process with
+        ease. Our team stays updated on the latest visa requirements for
+        numerous countries, providing you with accurate information and
+        personalized support to meet your travel needs. We handle the
+        documentation and formalities, so you can focus on planning your
+        journey, knowing that your visa process is in capable hands.
+      </p>
+      <p style="text-indent: 2em">
+        With our visa assistance, you’ll receive step-by-step guidance,
+        including document preparation, application submission, and updates on
+        the status of your visa. We aim to make the process as smooth and
+        efficient as possible, minimizing delays and ensuring you’re
+        well-prepared for your trip. Whether it’s for a vacation, business, or
+        family visit, Dhatch Tours and Travel’s visa services are here to
+        simplify your travel requirements and set you up for a stress-free start
+        to your adventure.
+      </p>
+
+      <h2 id="travel-insurance" class="service-scroll">Travel Insurance</h2>
+      <p style="text-indent: 2em">
+        Protect your journey with Dhatch Tours and Travel’s comprehensive travel
+        insurance options, designed to give you peace of mind on every trip. We
+        offer flexible insurance plans that cover a wide range of situations,
+        including medical emergencies, trip cancellations, lost luggage, and
+        more. With us, you can embark on your travels knowing you’re fully
+        protected from unforeseen events that could impact your experience.
+        Travel insurance is an essential part of responsible travel, and we
+        ensure you’re covered at every step.
+      </p>
+      <p style="text-indent: 2em">
+        Our travel insurance packages are tailored to meet the unique needs of
+        each traveler, with options suited for solo journeys, family vacations,
+        or group adventures. Dhatch Tours and Travel partners with trusted
+        insurance providers to bring you the best in coverage and affordability.
+        By securing your trip with our insurance services, you can explore the
+        world confidently, knowing that any unexpected situations are taken care
+        of promptly and professionally.
+      </p>
+
+      <h2 id="cab-services" class="service-scroll">Cab Services</h2>
+      <p style="text-indent: 2em">
+        Dhatch Tours and Travel provides reliable and comfortable cab services
+        to ensure you have safe and convenient transportation during your
+        journey. Our cab options are available for airport transfers, city
+        tours, and intercity travel, all designed to make your experience as
+        smooth as possible. With professional drivers, clean vehicles, and
+        timely service, you’ll enjoy a stress-free travel experience with every
+        ride. Book a cab with Dhatch Tours and Travel and let us handle the
+        logistics while you focus on exploring your destination.
+      </p>
+      <p style="text-indent: 2em">
+        Our cab services are tailored to offer flexibility and convenience,
+        catering to your unique travel needs. Whether you need a private
+        transfer or group transport, our network of drivers and vehicles
+        provides reliable solutions for all types of trips. We prioritize
+        safety, punctuality, and comfort, making it easier than ever to travel
+        at your own pace. Dhatch Tours and Travel’s cab services ensure that
+        wherever you go, you arrive with ease and peace of mind.
+      </p>
     </div>
-  </footer>
 
-  <script src="/assets/scripts/head_foot.js"></script>
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Company Information -->
+        <div class="footer-section company-info">
+          <img src="/assets/files/logo2.png" alt="Dhatch Logo" />
+          <p>First Floor, Vaigarai block, St, Paul's complex,</p>
+          <p>99/1, near Head post office signal,Sangillyandapuram,</p>
+          <p>Tiruchirappalli, Tamil Nadu 620001</p>
+          <p>
+            Email:
+            <a href="mailto:info@dhatchtravels.com"> info@dhatchtravels.com</a
+            ><br />
+          </p>
+          <p>
+            Phone: <a href="tel:+918925923750">+91 89259 23750</a><br />
+            <a href="tel:+918925923751"> +91 89259 23751</a><br />
+            <a href="tel:+917373773443"> +91 73737 73443</a>
+          </p>
+        </div>
 
+        <!-- Quick Links -->
+        <div class="footer-section quick-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="/about.html">About Us</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/all-packages">Holiday Packages</a></li>
+            <li><a href="/contact">Contact Us</a></li>
+          </ul>
+        </div>
 
-</body>
+        <!-- Social Media Links -->
+        <div class="footer-section social-media">
+          <h3>Follow Us</h3>
+          <a
+            href="https://www.facebook.com/people/Dhatch-Tours-Travels/61566988809950/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img src="/assets/files/icons/facebook_icon.png" alt="Facebook"
+          /></a>
+          <a
+            href="https://www.instagram.com/dhatch_travels"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img src="/assets/files/icons/instagram_icon.png" alt="Instagram"
+          /></a>
+          <a
+            href="https://www.threads.net/@dhatch_travels"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img src="/assets/files/icons/threads_icon.webp" alt="Threads"
+          /></a>
+          <a
+            href="https://wa.me/8925923750"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img src="/assets/files/icons/whatsapp_icon.png" alt="WhatsApp"
+          /></a>
+        </div>
+
+        <!-- Newsletter Subscription -->
+        <div class="footer-section newsletter">
+          <h3>Newsletter</h3>
+          <form action="#">
+            <input type="email" placeholder="Your email address" required />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="footer-bottom">
+        <p>
+          &copy; 2024 Dhatch Tours & Travels | Designed by
+          <a href="https://arknishinvent.com/">ArkNish Invent</a>
+        </p>
+      </div>
+    </footer>
+
+    <script src="/assets/scripts/head_foot.js"></script>
+  </body>
 </html>

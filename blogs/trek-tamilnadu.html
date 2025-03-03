@@ -1,52 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-
+  <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-1FQVME2N3T"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-1FQVME2N3T"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'G-1FQVME2N3T');
-</script>
+      gtag("config", "G-1FQVME2N3T");
+    </script>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trek TamilNadu - Dhatch Tours & Travels</title>
 
     <!-- font -->
     <!-- <link href='https://fonts.googleapis.com/css?family=Exo' rel='stylesheet'> -->
-    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
-    <link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css">
-    <link href="https://fonts.cdnfonts.com/css/ethnocentric" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Quicksand"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css" />
+    <link href="https://fonts.cdnfonts.com/css/ethnocentric" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
 
-
-    <link rel="stylesheet" href="/assets/styles/blog_template.css">
-    <link rel="stylesheet" href="/assets/styles/head_foot.css">
+    <link rel="stylesheet" href="/assets/styles/blog_template.css" />
+    <link rel="stylesheet" href="/assets/styles/head_foot.css" />
 
     <style>
-      .banner{
-         background-image: url(https://images.pexels.com/photos/12308295/pexels-photo-12308295.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
-         height: 250px;
-         object-fit: fill;
-      background-size: cover; /* Contain the entire image */
-      background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Prevent repeating */
-    opacity: 0.8;
-     display: flex;
-      justify-content: center;
-      align-items: center;
+      .banner {
+        background-image: url(https://images.pexels.com/photos/12308295/pexels-photo-12308295.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+        height: 250px;
+        object-fit: fill;
+        background-size: cover; /* Contain the entire image */
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Prevent repeating */
+        opacity: 0.8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
     </style>
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <!-- <div class="top-container">
         
         <img src="/assets/files/logo.png" style="height: 80px; position: relative; left: 50%; right: 50%;" alt="Dhatch Logo">
@@ -54,310 +60,481 @@
     </div> -->
 
     <header class="header">
-        <nav class="nav container">
-           <div class="nav__data">
-              <a href="..\" class="nav__logo">
-               <img src="/assets/files/logo.png" alt="Dhatch Logo">
-           </a>
-              
-              <div class="nav__toggle" id="nav-toggle">
-                 <i class="ri-menu-line nav__burger"></i>
-                 <i class="ri-close-line nav__close"></i>
+      <nav class="nav container">
+        <div class="nav__data">
+          <a href="..\" class="nav__logo">
+            <img src="/assets/files/logo.png" alt="Dhatch Logo" />
+          </a>
+
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line nav__burger"></i>
+            <i class="ri-close-line nav__close"></i>
+          </div>
+        </div>
+
+        <!-- NAV MENU -->
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li><a href="..\" class="nav__link">Home</a></li>
+
+            <!--=============== DROPDOWN 1 ===============-->
+            <li class="dropdown__item">
+              <a href="/services"
+                ><div class="nav__link">
+                  Services<i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                </div>
+              </a>
+
+              <ul class="dropdown__menu">
+                <li>
+                  <a href="/services#holiday-package" class="dropdown__link">
+                    Holiday Package</a
+                  >
+                </li>
+                <li>
+                  <a href="/services#air-ticket-booking" class="dropdown__link">
+                    Air Ticket Booking</a
+                  >
+                </li>
+                <li>
+                  <a href="/services#hotel-booking" class="dropdown__link">
+                    Hotel Booking</a
+                  >
+                </li>
+                <li>
+                  <a href="/services#visa" class="dropdown__link">
+                    Visa Services</a
+                  >
+                </li>
+                <li>
+                  <a href="/services#cab-services" class="dropdown__link">
+                    Cab Services</a
+                  >
+                </li>
+                <li>
+                  <a href="/services#travel-insurance" class="dropdown__link">
+                    Travel Insurance</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="dropdown__item">
+              <div class="nav__link">
+                Packages <i class="ri-arrow-down-s-line dropdown__arrow"></i>
               </div>
-           </div>
 
-           <!-- NAV MENU -->
-           <div class="nav__menu" id="nav-menu">
-              <ul class="nav__list">
-                 <li><a href="..\" class="nav__link">Home</a></li>
-
-
-                 <!--=============== DROPDOWN 1 ===============-->
-                 <li class="dropdown__item">
-                    <a href="/services"><div class="nav__link">
-                       Services<i class="ri-arrow-down-s-line dropdown__arrow"></i>
-                    </div>
-                </a>
-
-                    <ul class="dropdown__menu">
-                       <li>
-                           <a href="/services#holiday-package" class="dropdown__link"> Holiday Package</a>                          
-                        </li><li>
-                           <a href="/services#air-ticket-booking" class="dropdown__link"> Air Ticket Booking</a>                          
-                        </li><li>
-                           <a href="/services#hotel-booking" class="dropdown__link"> Hotel Booking</a>                          
-                        </li><li>
-                           <a href="/services#visa" class="dropdown__link"> Visa Services</a>                          
-                        </li><li>
-                           <a href="/services#travel-insurance" class="dropdown__link"> Cab Services</a>                          
-                        </li><li>
-                           <a href="/services#cab-services" class="dropdown__link"> Travel Insurance</a>                          
-                        </li>
-
-                    </ul>
-                 </li>
-                 
-
-                 <li class="dropdown__item">
-                   <div class="nav__link">
-                      Packages <i class="ri-arrow-down-s-line dropdown__arrow"></i>
-                   </div>
-
-                   <ul class="dropdown__menu">
-                      <li>
-                         <a href="/all-packages#north-india" class="dropdown__link">North India</a>                          
-                      </li>
-                      <li>
-                          <a href="/south-east-asia-packages" class="dropdown__link">South East Asia</a>                          
-                       </li>
-                       <li><a href="/singapore-malaysia-packages" class="dropdown__link">Singapore</a></li>
-                       <li><a href="/all-packages#malaysia" class="dropdown__link">Malaysia</a></li>
-
-                       <li>
-                          <a href="/all-packages#middle-east" class="dropdown__link">Middle East</a>                          
-                       </li>
-                       <li><a href="/all-packages#central-asia" class="dropdown__link">Central Asia</a></li>
-                       <li><a href="/all-packages#/europe" class="dropdown__link">Europe</a></li>
-                       <li><a href="/all-packages" class="dropdown__link">View All</a></li>
-                       </ul>
+              <ul class="dropdown__menu">
+                <li>
+                  <a href="/all-packages#north-india" class="dropdown__link"
+                    >North India</a
+                  >
+                </li>
+                <li>
+                  <a href="/south-east-asia-packages" class="dropdown__link"
+                    >South East Asia</a
+                  >
+                </li>
+                <li>
+                  <a href="/singapore-malaysia-packages" class="dropdown__link"
+                    >Singapore</a
+                  >
+                </li>
+                <li>
+                  <a href="/all-packages#malaysia" class="dropdown__link"
+                    >Malaysia</a
+                  >
                 </li>
 
-                <li><a href="/all-blogs" class="nav__link">Blog</a></li>
-                <li><a href="/contact" class="nav__link">Contact</a></li>
-               </ul>
-           </div>
-        </nav>
-     </header>
+                <li>
+                  <a href="/all-packages#middle-east" class="dropdown__link"
+                    >Middle East</a
+                  >
+                </li>
+                <li>
+                  <a href="/all-packages#central-asia" class="dropdown__link"
+                    >Central Asia</a
+                  >
+                </li>
+                <li>
+                  <a href="/all-packages#/europe" class="dropdown__link"
+                    >Europe</a
+                  >
+                </li>
+                <li>
+                  <a href="/all-packages" class="dropdown__link">View All</a>
+                </li>
+              </ul>
+            </li>
 
-     
-  
-         <div class="banner">
-             <h2>Trek Tamil Nadu</h2>
-         </div>
-
-         <main class="content">
-             <article>
-               <h3>Embark on an Unforgettable Adventure with Trek Tamil Nadu</h3>
-               <p class="timestamp">November 17, 2024</p>
-
-               <!-- <img src="https://images.pexels.com/photos/12308295/pexels-photo-12308295.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="TamilNadu Trek" class="blog-image"> -->
-               
-               <p>Tamil Nadu, often celebrated for its ancient temples, vibrant festivals, and cultural heritage, is also a treasure trove of natural wonders waiting to be discovered. Beneath its bustling cities and historical landmarks lies a lush wilderness that spans <strong>26,419.23 sq. km</strong>, covering 20.31% of the state's geographical area. From the tropical evergreen forests of the Western Ghats to the tranquil swamps and sprawling mangroves along the coast, Tamil Nadu boasts a breathtaking array of ecosystems that promise a unique experience for every traveler.</p>
-
-               <img src="/assets/files/blog-images/nilgiris.jpg" alt="Description of Image 2" class="blog-image">
-
-               <h3>The Trek Tamil Nadu Initiative</h3>
-               <p>In a move to bring these natural gems closer to the public while fostering environmental conservation, the Government of Tamil Nadu launched the Trek Tamil Nadu scheme. Spearheaded by the <strong>Tamil Nadu Wilderness Experiences Corporation (TNWEC)</strong>, an initiative founded in 2021, this program redefines ecotourism in the state by merging adventure with sustainability.</p>
-               
-
-
-               <h3>Exploring the Rich Biodiversity</h3>
-               <p>With 124 forest trails identified across Tamil Nadu, the scheme provides unparalleled opportunities to explore the region's rich biodiversity. Out of these, <strong>40 trails</strong> have been prioritized for immediate access, offering carefully curated trekking experiences. Whether you want to wander through misty mountain paths, walk alongside serene rivers, or navigate dense forests, there’s a trail for everyone.</p>
-
-
-               <h3>Responsible Tourism at its Core</h3>
-               <p>What makes these treks truly exceptional is their emphasis on <strong>responsible tourism</strong>. Beyond the thrill of adventure, each trek is designed to protect and sustain the natural environment while promoting local livelihoods. Knowledgeable and <strong>trained guides</strong> accompany trekkers, ensuring not just their safety but also providing deep insights into the local wildlife, flora, and ecosystems. This blend of adventure, education, and conservation is what sets Trek Tamil Nadu apart.</p>
-               <img src="/assets/files/blog-images/save-earth.png" alt="Description of Image 2" class="blog-image">
-               
-               <h3>Discover Tamil Nadu’s Hidden Paradises</h3>
-               <p>Imagine the thrill of trekking through the verdant hills of the <strong>Nilgiris</strong>, where the air is crisp, and the views are breathtaking. Picture yourself exploring the mangrove trails in <strong>Pichavaram</strong>, feeling the quiet hum of nature surrounding you. Or walking through the grasslands of the Palani Hills, where every step feels like a journey into the heart of an untouched world. Each trek brings you closer to nature’s beauty while reminding you of the importance of preserving it for future generations.</p>
-
-               
-               <p>The Trek Tamil Nadu initiative not only quenches your thirst for adventure but also aligns with sustainable travel practices. By participating, you contribute to conservation efforts, help sustain the ecological integrity of the region, and support local communities who are integral to these landscapes.</p>
-           
-               <h3>Explore Tamil Nadu's Top 40 Trekking Trails: A Comprehensive Guide to Adventure</h3>
-               <p>Tamil Nadu's diverse landscapes offer some of the best trekking experiences in India. Whether you’re looking for an easy walk through serene nature or a tough challenge that will test your limits, the state’s 40 curated trails cater to all levels of adventure seekers. Below is a list of some of the most exciting trekking trails you can explore as part of the Trek Tamil Nadu initiative:</p>
-               <img src="/assets/files/blog-images/mountain1.jpg" alt="Trek Tamilnadu - Nilgiris" class="blog-image">
-               
-               <h3>Nilgiris District</h3>
-               <ul>
-                 <li>Cairn Hill (Easy)</li>
-                 <li>Longwood Shola (Easy)</li>
-                 <li>Gene Pool (Easy)</li>
-                 <li>Karikayur to Porivarai Rock Painting (Moderate)</li>
-                 <li>Avalanche (Cauliflower Shola) – Kolaribetta (Moderate)</li>
-                 <li>Karikayur to Rangasamy Peak (Tough)</li>
-                 <li>Parsonvalley to Mukurthihut (Tough)</li>
-                 <li>Avalanche – Kolaribetta (Tough)</li>
-                 <li>Avalanche – Devarbetta (Tough)</li>
-                 <li>Needle Rock (Tough)</li>
-               </ul>
-           
-               <h3>Coimbatore District</h3>
-               <ul>
-                 <li>Manam Bolly (Easy)</li>
-                 <li>Baraliyar (Easy)</li>
-                 <li>Aliyar (Canal Bank) (Moderate)</li>
-                 <li>Sadivayal – Siruvani (Moderate)</li>
-                 <li>Sembukarai – Perumalmudi (Moderate)</li>
-                 <li>Vellingiri Hill (Tough)</li>
-                 <li>Topslip – Pandaravarai (Tough)</li>
-               </ul>
-           
-               <h3>Tiruppur District</h3>
-               <ul>
-                 <li>Chinnar Check Post – Kottar (Easy)</li>
-               </ul>
-           
-               <h3>Kanniyakumari District</h3>
-               <ul>
-                 <li>Kalikesam – Balamore (Moderate)</li>
-                 <li>Injikadavu (Moderate)</li>
-               </ul>
-           
-               <h3>Tirunelveli District</h3>
-               <ul>
-                 <li>Karaiyar – Moolakasam (Moderate)</li>
-                 <li>Kallar – Korakkanatharkoil (Tough)</li>
-               </ul>
-           
-               <h3>Tenkasi District</h3>
-               <ul>
-                 <li>Courtallam - Shenbagadevi Falls (Easy)</li>
-                 <li>Theerthaparai (Easy)</li>
-               </ul>
-           
-               <h3>Theni District</h3>
-               <ul>
-                 <li>Chinna Suruli – Thenpalani (Moderate)</li>
-                 <li>Karaparai (Moderate)</li>
-                 <li>Kurangani – Sambalaru (Moderate)</li>
-               </ul>
-           
-               <h3>Virudhunagar District</h3>
-               <ul>
-                 <li>Shenbagathoppu - W. Pudhupatti (Moderate)</li>
-               </ul>
-           
-               <h3>Madurai District</h3>
-               <ul>
-                 <li>Kutladampatti Falls – Thadagai Trail (Moderate)</li>
-               </ul>
-           
-               <h3>Dindigul District</h3>
-               <ul>
-                 <li>Zero Point – Karunkajam Falls (Easy)</li>
-                 <li>Solar Observatory – Gundar Zero Point (Moderate)</li>
-                 <li>Vattakanal – Vellagavi (Tough)</li>
-               </ul>
-           
-               <h3>Krishnagiri District</h3>
-               <ul>
-                  <li>Aiyur – Sami Lake (Easy)</li>
-                  <li>Guthirayan Peak (Tough)</li>
-               </ul>
-           
-               <h3>Salem District</h3>
-               <ul>
-                  <li>Nagalur - Sanniyasimalai Peak (Easy)</li>
-                  <li>Kurumbapatti Zoo – Gundur (Moderate)</li>
-                 <li>Kondappanaikanpatti – Gundur (Tough)</li>
-               </ul>
-           
-               <h3>Tirupattur District</h3>
-               <ul>
-                 <li>Yelagiri – Swamimalai (Easy)</li>
-                 <li>Jalagamparai (Moderate)</li>
-               </ul>
-           
-               <h3>Thiruvallur District</h3>
-               <ul>
-                 <li>Gudiyam Caves (Easy)</li>
-               </ul>
-           
-               <h3>How Dhatch Tours and Travels Can Elevate Your Trekking Experience</h3>
-               <p>While the idea of venturing into Tamil Nadu’s wilderness is exciting, planning the logistics can be daunting. That’s where <strong>Dhatch Tours and Travels</strong> becomes your perfect travel companion. Our mission is to make these adventures seamless, accessible, and memorable for every traveler.</p>
-           
-               <p>At Dhatch, we take pride in aligning our services with the objectives of the <strong>Trek Tamil Nadu scheme</strong>. From selecting trails that match your fitness level and interests to managing permits, transportation, and accommodation, we handle every detail. Our tailored packages ensure that all you need to focus on is enjoying the journey and soaking in the natural splendor of Tamil Nadu.</p>
-           
-               <p>Planning to explore with your friends, embark on a family adventure, or go solo? No worries—our expert team will craft the perfect itinerary to suit your preferences. We also prioritize responsible travel, working closely with local guides and communities to ensure your experience is not just enjoyable but also ethical and enriching.</p>
-           
-               <h3>Ready to Begin Your Journey?</h3>
-               <p>Tamil Nadu’s wilderness is calling, and the Trek Tamil Nadu scheme offers the perfect way to answer. Whether you’re a seasoned trekker or taking your first steps into the world of adventure, the trails promise unforgettable memories and transformative experiences.</p>
-           
-               <p>With Dhatch Tours and Travels as your trusted partner, your trekking adventure will be worry-free, well-planned, and filled with moments that you’ll cherish forever. It’s not just about reaching the destination—it’s about the stories you create along the way.</p>
-           
-               <p>So, what are you waiting for? Let’s lace up those boots, pack those backpacks, and embark on an extraordinary journey into Tamil Nadu’s heart. 
-                  <strong class="red">Contact Dhatch today, and let’s make your trekking dreams come true!</strong></p>
-                             
-                </article>
-         </main>
-     
-         <div class="contact-button-container">
-            <a href="/contact" class="contact-button">Contact Now</a>
+            <li><a href="/all-blogs" class="nav__link">Blog</a></li>
+            <li><a href="/contact" class="nav__link">Contact</a></li>
+          </ul>
         </div>
-     
+      </nav>
+    </header>
 
+    <div class="banner">
+      <h2>Trek Tamil Nadu</h2>
+    </div>
 
+    <main class="content">
+      <article>
+        <h3>Embark on an Unforgettable Adventure with Trek Tamil Nadu</h3>
+        <p class="timestamp">November 17, 2024</p>
 
+        <!-- <img src="https://images.pexels.com/photos/12308295/pexels-photo-12308295.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="TamilNadu Trek" class="blog-image"> -->
 
+        <p>
+          Tamil Nadu, often celebrated for its ancient temples, vibrant
+          festivals, and cultural heritage, is also a treasure trove of natural
+          wonders waiting to be discovered. Beneath its bustling cities and
+          historical landmarks lies a lush wilderness that spans
+          <strong>26,419.23 sq. km</strong>, covering 20.31% of the state's
+          geographical area. From the tropical evergreen forests of the Western
+          Ghats to the tranquil swamps and sprawling mangroves along the coast,
+          Tamil Nadu boasts a breathtaking array of ecosystems that promise a
+          unique experience for every traveler.
+        </p>
 
+        <img
+          src="/assets/files/blog-images/nilgiris.jpg"
+          alt="Description of Image 2"
+          class="blog-image"
+        />
 
+        <h3>The Trek Tamil Nadu Initiative</h3>
+        <p>
+          In a move to bring these natural gems closer to the public while
+          fostering environmental conservation, the Government of Tamil Nadu
+          launched the Trek Tamil Nadu scheme. Spearheaded by the
+          <strong>Tamil Nadu Wilderness Experiences Corporation (TNWEC)</strong
+          >, an initiative founded in 2021, this program redefines ecotourism in
+          the state by merging adventure with sustainability.
+        </p>
 
-<!-- WhatsApp Floating Button -->
-<a href="https://wa.me/918925923750" class="whatsapp-button" target="_blank" rel="noopener noreferrer">
-    <img src="/assets/files/icons/whatsapp_icon.png" alt="WhatsApp" />
-</a>
+        <h3>Exploring the Rich Biodiversity</h3>
+        <p>
+          With 124 forest trails identified across Tamil Nadu, the scheme
+          provides unparalleled opportunities to explore the region's rich
+          biodiversity. Out of these, <strong>40 trails</strong> have been
+          prioritized for immediate access, offering carefully curated trekking
+          experiences. Whether you want to wander through misty mountain paths,
+          walk alongside serene rivers, or navigate dense forests, there’s a
+          trail for everyone.
+        </p>
 
+        <h3>Responsible Tourism at its Core</h3>
+        <p>
+          What makes these treks truly exceptional is their emphasis on
+          <strong>responsible tourism</strong>. Beyond the thrill of adventure,
+          each trek is designed to protect and sustain the natural environment
+          while promoting local livelihoods. Knowledgeable and
+          <strong>trained guides</strong> accompany trekkers, ensuring not just
+          their safety but also providing deep insights into the local wildlife,
+          flora, and ecosystems. This blend of adventure, education, and
+          conservation is what sets Trek Tamil Nadu apart.
+        </p>
+        <img
+          src="/assets/files/blog-images/save-earth.png"
+          alt="Description of Image 2"
+          class="blog-image"
+        />
 
-<!-- footer -->
+        <h3>Discover Tamil Nadu’s Hidden Paradises</h3>
+        <p>
+          Imagine the thrill of trekking through the verdant hills of the
+          <strong>Nilgiris</strong>, where the air is crisp, and the views are
+          breathtaking. Picture yourself exploring the mangrove trails in
+          <strong>Pichavaram</strong>, feeling the quiet hum of nature
+          surrounding you. Or walking through the grasslands of the Palani
+          Hills, where every step feels like a journey into the heart of an
+          untouched world. Each trek brings you closer to nature’s beauty while
+          reminding you of the importance of preserving it for future
+          generations.
+        </p>
 
-<footer class="footer">
-    <div class="footer-container">
-      <!-- Company Information -->
-      <div class="footer-section company-info">
-        <img src="/assets/files/logo2.png" alt="Dhatch Logo">
-        <p>First Floor, Vaigarai block, St, Paul's complex,</p>
-        <p>99/1, near Head post office signal,Sangillyandapuram, </p>
-        <p> Tiruchirappalli, Tamil Nadu 620001</p>
-        <p>Email:
-        <a href="mailto:dhatchtnt@gmail.com" style="color: blue;"> dhatchtnt@gmail.com</a><br>
-    </p>
-        <p>Phone:
-        <a href="tel:+918925923750" style="color: blue;">+91 89259 23750</a><br>
-        <a href="tel:+918925923751" style="color: blue;">+91 89259 23751</a><br>
-        <a href="tel:+917373773443" style="color: blue;"> +91 73737 73443</a>
+        <p>
+          The Trek Tamil Nadu initiative not only quenches your thirst for
+          adventure but also aligns with sustainable travel practices. By
+          participating, you contribute to conservation efforts, help sustain
+          the ecological integrity of the region, and support local communities
+          who are integral to these landscapes.
+        </p>
+
+        <h3>
+          Explore Tamil Nadu's Top 40 Trekking Trails: A Comprehensive Guide to
+          Adventure
+        </h3>
+        <p>
+          Tamil Nadu's diverse landscapes offer some of the best trekking
+          experiences in India. Whether you’re looking for an easy walk through
+          serene nature or a tough challenge that will test your limits, the
+          state’s 40 curated trails cater to all levels of adventure seekers.
+          Below is a list of some of the most exciting trekking trails you can
+          explore as part of the Trek Tamil Nadu initiative:
+        </p>
+        <img
+          src="/assets/files/blog-images/mountain1.jpg"
+          alt="Trek Tamilnadu - Nilgiris"
+          class="blog-image"
+        />
+
+        <h3>Nilgiris District</h3>
+        <ul>
+          <li>Cairn Hill (Easy)</li>
+          <li>Longwood Shola (Easy)</li>
+          <li>Gene Pool (Easy)</li>
+          <li>Karikayur to Porivarai Rock Painting (Moderate)</li>
+          <li>Avalanche (Cauliflower Shola) – Kolaribetta (Moderate)</li>
+          <li>Karikayur to Rangasamy Peak (Tough)</li>
+          <li>Parsonvalley to Mukurthihut (Tough)</li>
+          <li>Avalanche – Kolaribetta (Tough)</li>
+          <li>Avalanche – Devarbetta (Tough)</li>
+          <li>Needle Rock (Tough)</li>
+        </ul>
+
+        <h3>Coimbatore District</h3>
+        <ul>
+          <li>Manam Bolly (Easy)</li>
+          <li>Baraliyar (Easy)</li>
+          <li>Aliyar (Canal Bank) (Moderate)</li>
+          <li>Sadivayal – Siruvani (Moderate)</li>
+          <li>Sembukarai – Perumalmudi (Moderate)</li>
+          <li>Vellingiri Hill (Tough)</li>
+          <li>Topslip – Pandaravarai (Tough)</li>
+        </ul>
+
+        <h3>Tiruppur District</h3>
+        <ul>
+          <li>Chinnar Check Post – Kottar (Easy)</li>
+        </ul>
+
+        <h3>Kanniyakumari District</h3>
+        <ul>
+          <li>Kalikesam – Balamore (Moderate)</li>
+          <li>Injikadavu (Moderate)</li>
+        </ul>
+
+        <h3>Tirunelveli District</h3>
+        <ul>
+          <li>Karaiyar – Moolakasam (Moderate)</li>
+          <li>Kallar – Korakkanatharkoil (Tough)</li>
+        </ul>
+
+        <h3>Tenkasi District</h3>
+        <ul>
+          <li>Courtallam - Shenbagadevi Falls (Easy)</li>
+          <li>Theerthaparai (Easy)</li>
+        </ul>
+
+        <h3>Theni District</h3>
+        <ul>
+          <li>Chinna Suruli – Thenpalani (Moderate)</li>
+          <li>Karaparai (Moderate)</li>
+          <li>Kurangani – Sambalaru (Moderate)</li>
+        </ul>
+
+        <h3>Virudhunagar District</h3>
+        <ul>
+          <li>Shenbagathoppu - W. Pudhupatti (Moderate)</li>
+        </ul>
+
+        <h3>Madurai District</h3>
+        <ul>
+          <li>Kutladampatti Falls – Thadagai Trail (Moderate)</li>
+        </ul>
+
+        <h3>Dindigul District</h3>
+        <ul>
+          <li>Zero Point – Karunkajam Falls (Easy)</li>
+          <li>Solar Observatory – Gundar Zero Point (Moderate)</li>
+          <li>Vattakanal – Vellagavi (Tough)</li>
+        </ul>
+
+        <h3>Krishnagiri District</h3>
+        <ul>
+          <li>Aiyur – Sami Lake (Easy)</li>
+          <li>Guthirayan Peak (Tough)</li>
+        </ul>
+
+        <h3>Salem District</h3>
+        <ul>
+          <li>Nagalur - Sanniyasimalai Peak (Easy)</li>
+          <li>Kurumbapatti Zoo – Gundur (Moderate)</li>
+          <li>Kondappanaikanpatti – Gundur (Tough)</li>
+        </ul>
+
+        <h3>Tirupattur District</h3>
+        <ul>
+          <li>Yelagiri – Swamimalai (Easy)</li>
+          <li>Jalagamparai (Moderate)</li>
+        </ul>
+
+        <h3>Thiruvallur District</h3>
+        <ul>
+          <li>Gudiyam Caves (Easy)</li>
+        </ul>
+
+        <h3>
+          How Dhatch Tours and Travels Can Elevate Your Trekking Experience
+        </h3>
+        <p>
+          While the idea of venturing into Tamil Nadu’s wilderness is exciting,
+          planning the logistics can be daunting. That’s where
+          <strong>Dhatch Tours and Travels</strong> becomes your perfect travel
+          companion. Our mission is to make these adventures seamless,
+          accessible, and memorable for every traveler.
+        </p>
+
+        <p>
+          At Dhatch, we take pride in aligning our services with the objectives
+          of the <strong>Trek Tamil Nadu scheme</strong>. From selecting trails
+          that match your fitness level and interests to managing permits,
+          transportation, and accommodation, we handle every detail. Our
+          tailored packages ensure that all you need to focus on is enjoying the
+          journey and soaking in the natural splendor of Tamil Nadu.
+        </p>
+
+        <p>
+          Planning to explore with your friends, embark on a family adventure,
+          or go solo? No worries—our expert team will craft the perfect
+          itinerary to suit your preferences. We also prioritize responsible
+          travel, working closely with local guides and communities to ensure
+          your experience is not just enjoyable but also ethical and enriching.
+        </p>
+
+        <h3>Ready to Begin Your Journey?</h3>
+        <p>
+          Tamil Nadu’s wilderness is calling, and the Trek Tamil Nadu scheme
+          offers the perfect way to answer. Whether you’re a seasoned trekker or
+          taking your first steps into the world of adventure, the trails
+          promise unforgettable memories and transformative experiences.
+        </p>
+
+        <p>
+          With Dhatch Tours and Travels as your trusted partner, your trekking
+          adventure will be worry-free, well-planned, and filled with moments
+          that you’ll cherish forever. It’s not just about reaching the
+          destination—it’s about the stories you create along the way.
+        </p>
+
+        <p>
+          So, what are you waiting for? Let’s lace up those boots, pack those
+          backpacks, and embark on an extraordinary journey into Tamil Nadu’s
+          heart.
+          <strong class="red"
+            >Contact Dhatch today, and let’s make your trekking dreams come
+            true!</strong
+          >
+        </p>
+      </article>
+    </main>
+
+    <div class="contact-button-container">
+      <a href="/contact" class="contact-button">Contact Now</a>
+    </div>
+
+    <!-- WhatsApp Floating Button -->
+    <a
+      href="https://wa.me/918925923750"
+      class="whatsapp-button"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <img src="/assets/files/icons/whatsapp_icon.png" alt="WhatsApp" />
+    </a>
+
+    <!-- footer -->
+
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Company Information -->
+        <div class="footer-section company-info">
+          <img src="/assets/files/logo2.png" alt="Dhatch Logo" />
+          <p>First Floor, Vaigarai block, St, Paul's complex,</p>
+          <p>99/1, near Head post office signal,Sangillyandapuram,</p>
+          <p>Tiruchirappalli, Tamil Nadu 620001</p>
+          <p>
+            Email:
+            <a href="mailto:dhatchtnt@gmail.com" style="color: blue">
+              dhatchtnt@gmail.com</a
+            ><br />
+          </p>
+          <p>
+            Phone:
+            <a href="tel:+918925923750" style="color: blue">+91 89259 23750</a
+            ><br />
+            <a href="tel:+918925923751" style="color: blue">+91 89259 23751</a
+            ><br />
+            <a href="tel:+917373773443" style="color: blue"> +91 73737 73443</a>
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-section quick-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/all-packages">Holiday Packages</a></li>
+            <li><a href="/contact">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="footer-section social-media">
+          <h3>Follow Us</h3>
+          <a
+            href="https://www.facebook.com/people/Dhatch-Tours-Travels/61566988809950/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img src="/assets/files/icons/facebook_icon.png" alt="Facebook"
+          /></a>
+          <a
+            href="https://www.instagram.com/dhatch_travels"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img src="/assets/files/icons/instagram_icon.png" alt="Instagram"
+          /></a>
+          <a
+            href="https://www.threads.net/@dhatch_travels"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img src="/assets/files/icons/threads_icon.webp" alt="Threads"
+          /></a>
+          <a
+            href="https://wa.me/918925923750"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img src="/assets/files/icons/whatsapp_icon.png" alt="WhatsApp"
+          /></a>
+        </div>
+
+        <!-- Newsletter Subscription -->
+        <div class="footer-section newsletter">
+          <h3>Newsletter</h3>
+          <form action="#">
+            <input type="email" placeholder="Your email address" required />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="footer-bottom">
+        <p>
+          &copy; 2024 Dhatch Tours & Travels | Designed by
+          <a
+            href="https://arknishinvent.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >ArkNish Invent</a
+          >
         </p>
       </div>
-  
-      <!-- Quick Links -->
-      <div class="footer-section quick-links">
-        <h3>Quick Links</h3>
-        <ul>
-          <li><a href="/about">About Us</a></li>
-          <li><a href="/services">Services</a></li>
-          <li><a href="/all-packages">Holiday Packages</a></li>
-          <li><a href="/contact">Contact Us</a></li>
-        </ul>
-      </div>
-  
-      <!-- Social Media Links -->
-      <div class="footer-section social-media">
-        <h3>Follow Us</h3>
-        <a href="https://www.facebook.com/people/Dhatch-Tours-Travels/61566988809950/" target="_blank" rel="noopener noreferrer"><img src="/assets/files/icons/facebook_icon.png" alt="Facebook"></a>
-        <a href="https://www.instagram.com/dhatch_travels" target="_blank" rel="noopener noreferrer"><img src="/assets/files/icons/instagram_icon.png" alt="Instagram"></a>
-        <a href="https://www.threads.net/@dhatch_travels" target="_blank" rel="noopener noreferrer"><img src="/assets/files/icons/threads_icon.webp" alt="Threads"></a>
-        <a href="https://wa.me/918925923750" target="_blank" rel="noopener noreferrer"><img src="/assets/files/icons/whatsapp_icon.png" alt="WhatsApp"></a>
-      </div>
-  
-      <!-- Newsletter Subscription -->
-      <div class="footer-section newsletter">
-        <h3>Newsletter</h3>
-        <form action="#">
-          <input type="email" placeholder="Your email address" required>
-          <button type="submit">Subscribe</button>
-        </form>
-      </div>
-    </div>
-  
-    <!-- Copyright -->
-    <div class="footer-bottom">
-      <p>&copy; 2024 Dhatch Tours & Travels | Designed by <a href="https://arknishinvent.com/" target="_blank" rel="noopener noreferrer">ArkNish Invent</a></p>
-    </div>
-  </footer>
-  
-
+    </footer>
 
     <script src="/assets/scripts/head_foot.js"></script>
-</body>
+  </body>
 </html>
