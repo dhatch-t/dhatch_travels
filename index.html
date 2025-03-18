@@ -207,7 +207,7 @@
         </div> 
         <div class="mySlides fade">
             <!-- <div class="numbertext">1 / 3</div> -->
-            <img src="assets/files/banners/01_Singapore.jpg" style="width:100%" alt="Singapre Banner">
+            <img src="assets/files/banners/01_Singapore.jpg" style="width:100%" alt="Singapore Banner">
             <!-- <div class="text">Caption Text</div> -->
         </div>
 
@@ -360,6 +360,64 @@
         </a>
     </div>
 
+<!-- cabs -->
+<section class="cabs-container">
+    <h3 class="cab-title">Explore Our Fleet – Comfortable & Affordable Cabs</h3>
+    <div class="cab-slider owl-carousel lowl-theme">
+        <div class="cab-item">
+            <img src="assets/files/cabs/car1.jpg" alt="Sedan Taxi for City Tours">
+            <!-- <p>Comfortable Sedan - Perfect for City Tours</p> -->
+        </div>
+        <div class="cab-item">
+            <img src="assets/files/cabs/car4.jpg" alt="Sedan Taxi for City Tours">
+            <!-- <p>Spacious SUV - Ideal for Family Trips</p> -->
+        </div>
+        <div class="cab-item">
+            <img src="assets/files/cabs/car3.jpg" alt="Sedan Taxi for City Tours">
+            <!-- <p>Luxury Car - Premium Rides for Special Occasions</p> -->
+        </div>
+        <!-- <div class="cab-item">
+            <img src="assets/files/cabs/car2.jpg" alt="Sedan Taxi for City Tours">
+        </div> -->
+        <div class="cab-item">
+            <img src="assets/files/cabs/car5.jpg" alt="Sedan Taxi for City Tours">
+            <!-- <p>Comfortable Sedan - Perfect for City Tours</p> -->
+        </div>
+    </div>
+</section>
+
+
+ </section>
+
+    <!--  choose-us -->
+    <section class="why-us-container">
+        <div class="why-us-title">
+            <a href="#">
+                <h1>What sets <strong>Dhatch</strong> apart &#11116</h1>
+            </a>
+        </div>
+        <div class="why-us-item-container">
+            <div class="why-us-item">
+                <img src="assets/files/vacation.png" alt="vacation">
+                <h3>Personalized Travel Experiences</h3>
+                <p>We tailor each journey to match your unique travel style and
+                    preferences ensuring an unforgettable experience</p>
+            </div>
+
+            <div class="why-us-item">
+                <img src="assets/files/safety.png" alt="safety">
+                <h3>Safety and Reliability</h3>
+                <p>Our team is dedicated to providing safe, dependable, and hassle-free travel experiences with
+                    personalized care and expertise</p>
+            </div>
+            <div class="why-us-item">
+                <img src="assets/files/save.png" alt="save">
+                <h3>Affordable Luxury and Value</h3>
+                <p>Our flexible packages enable you to travel in luxury while keeping your expenses comfortably low</p>
+            </div>
+        </div>
+    </section>
+
 
     <!-- testimonial -->
 
@@ -399,36 +457,6 @@
         </div>
         </span>
     </div>
-
-    <!--  choose-us -->
-
-    <section class="why-us-container">
-        <div class="why-us-title">
-            <a href="#">
-                <h1>What sets <strong>Dhatch</strong> apart &#11116</h1>
-            </a>
-        </div>
-        <div class="why-us-item-container">
-            <div class="why-us-item">
-                <img src="assets/files/vacation.png" alt="vacation">
-                <h3>Personalized Travel Experiences</h3>
-                <p>We tailor each journey to match your unique travel style and
-                    preferences ensuring an unforgettable experience</p>
-            </div>
-
-            <div class="why-us-item">
-                <img src="assets/files/safety.png" alt="safety">
-                <h3>Safety and Reliability</h3>
-                <p>Our team is dedicated to providing safe, dependable, and hassle-free travel experiences with
-                    personalized care and expertise</p>
-            </div>
-            <div class="why-us-item">
-                <img src="assets/files/save.png" alt="save">
-                <h3>Affordable Luxury and Value</h3>
-                <p>Our flexibile packages enable you to travel in luxury while keeping your expenses comfortably low</p>
-            </div>
-        </div>
-    </section>
 
     <!-- Form -->
     <div class="form-full">
@@ -565,7 +593,26 @@
                     }
                 }
             });
-        });
+        
+
+
+
+    $('.cab-slider').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        dots: true,
+        navText: [
+        "<span class='owl-prev'>&#11164;</span>",  // Left arrow (Previous)
+        "<span class='owl-next'>&#11166;</span>"   // Right arrow (Next)
+    ],        responsive: {
+            0: { items: 1 },
+            600: { items: 2 },
+            1000: { items: 3 }
+        }
+});
+
+});
 
 
     </script>
